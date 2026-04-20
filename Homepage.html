@@ -12,8 +12,8 @@
     <!-- CSS esterno -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+
 
 <!-- BARRA ALTA -->
 <div class="pagina topbar d-flex align-items-center px-3">
@@ -29,6 +29,23 @@
         <div>Accedi</div>
     </div>
 </div>
+<!--BARRA ALTA MOBILE-->
+<div class="topbar-mobile-wrap">
+    <div class="pagina">
+        <div class="topbar-riga1">
+            <div class="topbar-notifica">notifica</div>
+            <div class="topbar-abbonati">ABBONATI</div>
+        </div>
+
+        <div class="topbar-riga2">
+            <div class="topbar-menu">menu</div>
+            <div class="topbar-logo">prova logo</div>
+            <div class="topbar-utente">utente</div>
+        </div>
+
+    </div>
+</div>
+
 
 <!-- FASCIA BLU -->
 <div class="pagina fascia-notizia">
@@ -87,7 +104,7 @@
 
 
             <!-- NUOVO BLOCCO 1: testo + immagine -->
-            <div class="blocco-news-grande p-3">
+            <div class="blocco-news-grande p-3 blocco-news-mobile">
                 <div class="row align-items-start g-4">
                     <div class="col-12 col-md-4">
                         <div class="testo-lungo">prova blocco 1</div>
@@ -103,17 +120,17 @@
             <div class="p-3 blocco-card">
                 <div class="row g-3">
 
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-4 card-mobile-laterale">
                         <div class="placeholder-card mb-2">immagine 4</div>
                         <div class="testo-box">prova testo 4</div>
                     </div>
 
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-4 card-mobile-laterale">
                         <div class="placeholder-card mb-2">immagine 5</div>
                         <div class="testo-box">prova testo 5</div>
                     </div>
 
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-4 card-mobile-laterale">
                         <div class="placeholder-card mb-2">immagine 6</div>
                         <div class="testo-box">prova testo 6</div>
                     </div>
@@ -122,7 +139,7 @@
             </div>
 
             <!-- NUOVO BLOCCO 2: testo + immagine -->
-            <div class="blocco-news-grande p-3">
+            <div class="blocco-news-grande p-3 blocco-news-mobile">
                 <div class="row align-items-start g-4">
                     <div class="col-12 col-md-4">
                         <div class="testo-lungo">prova blocco 2</div>
@@ -137,17 +154,17 @@
             <div class="p-3 blocco-card">
                 <div class="row g-3">
 
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-4 card-mobile-laterale">
                         <div class="placeholder-card mb-2">immagine 7</div>
                         <div class="testo-box">prova testo 7</div>
                     </div>
 
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-4 card-mobile-laterale">
                         <div class="placeholder-card mb-2">immagine 8</div>
                         <div class="testo-box">prova testo 8</div>
                     </div>
 
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-4 card-mobile-laterale">
                         <div class="placeholder-card mb-2">immagine 9</div>
                         <div class="testo-box">prova testo 9</div>
                     </div>
@@ -156,7 +173,7 @@
             </div>
 
             <!-- blocco finale con testo sopra e immagine grande sotto -->
-            <div class="blocco-news-grande p-3">
+            <div class="blocco-news-grande p-3 blocco-news-mobile">
                 <div class="row align-items-start g-4">
                     <div class="col-12 col-md-4">
                         <div class="testo-lungo">prova blocco finale</div>
@@ -220,41 +237,383 @@
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="newsletter-box">
                     <div class="newsletter-icona">icona</div>
-                    <div class="newsletter-titolo">prova titolo 1</div>
-                    <div class="newsletter-autore">prova autore 1</div>
-                    <div class="newsletter-testo">prova testo 1</div>
+                    <div class="newsletter-contenuto">
+                        <div class="newsletter-titolo">prova titolo 1</div>
+                        <div class="newsletter-linea"></div>
+                        <div class="newsletter-autore">prova autore 1</div>
+                        <div class="newsletter-testo">prova testo 1</div>
+                    </div>
                 </div>
             </div>
 
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="newsletter-box">
                     <div class="newsletter-icona">icona</div>
-                    <div class="newsletter-titolo">prova titolo 2</div>
-                    <div class="newsletter-autore">prova autore 2</div>
-                    <div class="newsletter-testo">prova testo 2</div>
+                    <div class="newsletter-contenuto">
+                        <div class="newsletter-titolo">prova titolo 2</div>
+                        <div class="newsletter-linea"></div>
+                        <div class="newsletter-autore">prova autore 2</div>
+                        <div class="newsletter-testo">prova testo 2</div>
+                    </div>
                 </div>
             </div>
 
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="newsletter-box">
                     <div class="newsletter-icona">icona</div>
-                    <div class="newsletter-titolo">prova titolo 3</div>
-                    <div class="newsletter-autore">prova autore 3</div>
-                    <div class="newsletter-testo">prova testo 3</div>
+                    <div class="newsletter-contenuto">
+                        <div class="newsletter-titolo">prova titolo 3</div>
+                        <div class="newsletter-linea"></div>
+                        <div class="newsletter-autore">prova autore 3</div>
+                        <div class="newsletter-testo">prova testo 3</div>
+                    </div>
                 </div>
             </div>
 
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="newsletter-box">
                     <div class="newsletter-icona">icona</div>
-                    <div class="newsletter-titolo">prova titolo 4</div>
-                    <div class="newsletter-autore">prova autore 4</div>
-                    <div class="newsletter-testo">prova testo 4</div>
+                    <div class="newsletter-contenuto">
+                        <div class="newsletter-titolo">prova titolo 4</div>
+                        <div class="newsletter-linea"></div>
+                        <div class="newsletter-autore">prova autore 4</div>
+                        <div class="newsletter-testo">prova testo 4</div>
+                    </div>
                 </div>
             </div>
 
         </div>
     </div>
+    <!-- BLOCCO VIDEO -->
+    <div class="sezione-video-home p-4">
+
+        <div class="titolo-sezione titolo-su-scuro">
+            Video
+            <div class="sottolinea"></div>
+        </div>
+
+        <div class="row g-4 mt-2">
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="video-card">
+                    <div class="video-img">immagine 1</div>
+                    <div class="video-testo mt-2">prova testo 1</div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="video-card">
+                    <div class="video-img">immagine 2</div>
+                    <div class="video-testo mt-2">prova testo 2</div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="video-card">
+                    <div class="video-img">immagine 3</div>
+                    <div class="video-testo mt-2">prova testo 3</div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="video-card">
+                    <div class="video-img">immagine 4</div>
+                    <div class="video-testo mt-2">prova testo 4</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- BLOCCO ECONOMIA -->
+    <div class="sezione-economia p-4">
+
+        <div class="titolo-sezione">
+            Economia
+            <div class="sottolinea"></div>
+        </div>
+
+        <div class="row g-4 mt-2 align-items-start">
+
+            <div class="col-12 col-lg-2">
+                <div class="economia-testo-lato">
+                    prova testo sinistra
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <div class="economia-img">immagine centrale</div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+                <div class="economia-testo-lato">
+                    prova testo destra
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- BLOCCO METEO / GIOCHI / DIZIONARIO -->
+    <div class="sezione-servizi p-4">
+
+        <div class="row g-0 blocco-servizi-superiore">
+
+            <!-- COLONNA 1 -->
+            <div class="col-12 col-lg-4 servizio-colonna">
+                <div class="servizio-titolo mb-3">METEO</div>
+                <div class="servizio-box-grande">immagine / meteo</div>
+            </div>
+
+            <!-- COLONNA 2 -->
+            <div class="col-12 col-lg-2 servizio-colonna">
+                <div class="servizio-bottone mb-3">TUTTE LE PREVISIONI</div>
+
+                <div class="icona-testo mb-3">
+                    <div class="mini-icona">icona</div>
+                    <div>Sera</div>
+                </div>
+
+                <div class="icona-testo mb-3">
+                    <div class="mini-icona">icona</div>
+                    <div>Notte</div>
+                </div>
+
+                <div class="icona-testo">
+                    <div class="mini-icona">icona</div>
+                    <div>Mattino</div>
+                </div>
+            </div>
+
+            <!-- COLONNA 3 -->
+            <div class="col-12 col-lg-3 servizio-colonna">
+                <div class="servizio-titolo mb-3">GIOCHI</div>
+                <div class="servizio-box-piccolo mb-2">foto 1</div>
+                <div class="text-center">Sudoku</div>
+            </div>
+
+            <!-- COLONNA 4 -->
+            <div class="col-12 col-lg-3 servizio-colonna">
+                <div class="servizio-titolo mb-3 invisible">GIOCHI</div>
+                <div class="servizio-box-piccolo mb-2">foto 2</div>
+                <div class="text-center">Cruciverba</div>
+            </div>
+
+        </div>
+
+        <!-- PARTE SOTTO DEL PRIMO BLOCCO -->
+        <div class="blocco-oroscopo mt-4 pt-4">
+            <div class="servizio-titolo mb-3">OROSCOPO</div>
+
+            <div class="row g-3 text-center">
+                <div class="col-6 col-md-4 col-lg-1">
+                    <div class="oroscopo-icona">icona</div>
+                    <div>Ariete</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-1">
+                    <div class="oroscopo-icona">icona</div>
+                    <div>Toro</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-1">
+                    <div class="oroscopo-icona">icona</div>
+                    <div>Gemelli</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-1">
+                    <div class="oroscopo-icona">icona</div>
+                    <div>Cancro</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-1">
+                    <div class="oroscopo-icona">icona</div>
+                    <div>Leone</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-1">
+                    <div class="oroscopo-icona">icona</div>
+                    <div>Vergine</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-1">
+                    <div class="oroscopo-icona">icona</div>
+                    <div>Bilancia</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-1">
+                    <div class="oroscopo-icona">icona</div>
+                    <div>Scorpione</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-1">
+                    <div class="oroscopo-icona">icona</div>
+                    <div>Sagittario</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-1">
+                    <div class="oroscopo-icona">icona</div>
+                    <div>Capricorno</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-1">
+                    <div class="oroscopo-icona">icona</div>
+                    <div>Acquario</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-1">
+                    <div class="oroscopo-icona">icona</div>
+                    <div>Pesci</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- FOOTER GRANDE BIANCO -->
+    <div class="footer-principale">
+        <div class="footer-contenitore">
+
+            <div class="row g-0">
+
+                <!-- COLONNA SINISTRA -->
+                <div class="col-12 col-lg-3 footer-colonna-sinistra">
+                    <div class="footer-logo">la Repubblica</div>
+
+                    <div class="footer-testo-piccolo">GEDI News Network S.p.A.</div>
+                    <div class="footer-testo-piccolo">P.iva 01578251009</div>
+                    <div class="footer-testo-piccolo">ISSN 2499-0817</div>
+
+                    <div class="footer-linea"></div>
+
+                    <button class="footer-bottone">Abbonati</button>
+
+                    <div class="footer-linea"></div>
+
+                    <div class="footer-titolo-mini">APP</div>
+                    <div class="footer-link-riga">Iphone | Android</div>
+
+                    <div class="footer-linea"></div>
+
+                    <div class="footer-titolo-mini">SOCIAL</div>
+                    <div class="footer-social">
+                        <span>icona</span>
+                        <span>icona</span>
+                        <span>icona</span>
+                        <span>icona</span>
+                        <span>icona</span>
+                    </div>
+                </div>
+
+                <!-- COLONNA DESTRA -->
+                <div class="col-12 col-lg-9 footer-colonna-destra">
+
+                    <div class="footer-sezione-top">
+                        <div class="footer-titolo-sezione">SUPPLEMENTI REPUBBLICA</div>
+                        <div class="footer-links-orizzontali">
+                            <span>Affari e Finanza</span>
+                            <span>D</span>
+                            <span>Il Venerdì</span>
+                            <span>Robinson</span>
+                        </div>
+                    </div>
+
+                    <div class="footer-linea-larga"></div>
+
+                    <div class="row g-4">
+
+                        <div class="col-12 col-md-4">
+                            <div class="footer-titolo-sezione">GEDI NEWS NETWORK</div>
+                            <div class="footer-lista">
+                                <div>La Stampa</div>
+                                <div>HuffPost Italia</div>
+                                <div>Fem</div>
+                                <div>Formula Passion</div>
+                                <div>VD News</div>
+                            </div>
+
+                            <div class="footer-titolo-sezione mt-4">PERIODICI</div>
+                            <div class="footer-lista">
+                                <div>Le Scienze</div>
+                                <div>Limes</div>
+                                <div>National Geographic</div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            <div class="footer-titolo-sezione">RADIO E PODCAST</div>
+                            <div class="footer-lista">
+                                <div>DeeJay</div>
+                                <div>Capital</div>
+                                <div>m2o</div>
+                                <div>Onepodcast</div>
+                            </div>
+
+                            <div class="footer-titolo-sezione mt-4">INIZIATIVE EDITORIALI</div>
+                            <div class="footer-lista">
+                                <div>In edicola</div>
+                            </div>
+
+                            <div class="footer-titolo-sezione mt-4">PARTNERSHIP</div>
+                            <div class="footer-lista">
+                                <div>LAB</div>
+                                <div>MyMovies</div>
+                                <div>AutoXY</div>
+                                <div>Formula Passion</div>
+                                <div>Sport.it</div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            <div class="footer-titolo-sezione">SERVIZI, TV E CONSUMI</div>
+                            <div class="footer-lista">
+                                <div>Annunci</div>
+                                <div>Ilmiolibro</div>
+                                <div>Enti e Tribunali</div>
+                                <div>Meteo</div>
+                                <div>Tvzap</div>
+                                <div>Dizionario italiano</div>
+                                <div>Dizionario inglese/italiano</div>
+                                <div>Consigli.it</div>
+                                <div>Codici Sconto</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="footer-linea-larga mt-4"></div>
+
+                    <div class="footer-network-lena">
+                        <div class="footer-titolo-sezione">NETWORK LENA</div>
+                        <div class="footer-links-orizzontali mt-2">
+                            <span>Die Welt</span>
+                            <span>El Pais</span>
+                            <span>Gazeta Wyborcza</span>
+                            <span>Le Figaro</span>
+                            <span>Le Soir</span>
+                            <span>Tages Anzeiger</span>
+                            <span>Tribune de Geneve</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER GRIGIO FINALE -->
+    <div class="footer-finale">
+        <div class="footer-finale-contenitore">
+
+            <div class="footer-finale-links">
+                <span>Mappa del sito</span>
+                <span>Redazione</span>
+                <span>Scriveteci</span>
+                <span>Per inviare foto e video</span>
+                <span>Servizio Clienti</span>
+                <span>Pubblicità</span>
+                <span>Gestione Cookie</span>
+                <span>Privacy</span>
+                <span>Cookie Policy</span>
+                <span>Codice Etico e Best Practices</span>
+                <span>Dichiarazione di accessibilità</span>
+            </div>
+
+            <div class="footer-finale-copyright">
+                Copyright © 2001-2026 GEDI News Network S.p.A. Tutti i diritti sono riservati
+            </div>
+
+        </div>
+</div>
 </div>
 
 </body>

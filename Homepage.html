@@ -8,75 +8,115 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- CSS esterno -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 
-<!-- BARRA ALTA -->
+<!-- BARRA ALTA DESKTOP -->
 <div class="pagina topbar d-flex align-items-center px-3">
     <div class="d-flex justify-content-between align-items-center w-100">
-        <div class="d-flex gap-4 flex-wrap">
-            <div>Menu</div>
-            <div>Cerca</div>
-            <div>Notifiche</div>
+
+        <div class="d-flex gap-4 flex-wrap topbar-left">
+            <div class="topbar-item">
+                <i class="bi bi-list"></i>
+                <span>Menu</span>
+            </div>
+
+            <div class="topbar-item">
+                <i class="bi bi-search"></i>
+                <span>Cerca</span>
+            </div>
+
+            <div class="topbar-item">
+                <i class="bi bi-bell"></i>
+                <span>Notifiche</span>
+            </div>
         </div>
 
-        <div>ABBONATI</div>
+        <div class="topbar-abbonati">ABBONATI</div>
 
-        <div>Accedi</div>
+        <div class="topbar-item">
+            <span>Accedi</span>
+            <i class="bi bi-person"></i>
+        </div>
+
     </div>
 </div>
-<!--BARRA ALTA MOBILE-->
+
+<!-- BARRA ALTA MOBILE / TABLET -->
 <div class="topbar-mobile-wrap">
-    <div class="pagina">
+    <div class="pagina pagina-mobile-topbar">
         <div class="topbar-riga1">
-            <div class="topbar-notifica">notifica</div>
+            <div class="topbar-notifica">
+                <i class="bi bi-bell"></i>
+                <span class="label-mobile-hide">Notifiche</span>
+            </div>
+
             <div class="topbar-abbonati">ABBONATI</div>
         </div>
 
         <div class="topbar-riga2">
-            <div class="topbar-menu">menu</div>
+            <div class="topbar-menu">
+                <i class="bi bi-list"></i>
+                <span class="label-mobile-hide">Menu</span>
+            </div>
+
             <div class="topbar-logo">prova logo</div>
-            <div class="topbar-utente">utente</div>
-        </div>
 
-    </div>
-</div>
-
-
-<!-- FASCIA BLU -->
-<div class="pagina fascia-notizia">
-    <div class="row align-items-center g-0 h-100">
-        <div class="col-12 col-md-3 text-center py-3">
-            prova1
-        </div>
-        <div class="col-12 col-md-9 py-3">
-            prova2
+            <div class="topbar-utente">
+                <i class="bi bi-person"></i>
+                <span class="label-mobile-hide">Accedi</span>
+            </div>
         </div>
     </div>
 </div>
 
-<!-- LOGO -->
-<div class="pagina logo-area">
-    <div class="display-2">prova3</div>
-    <div class="mt-3">prova4</div>
-</div>
+<!-- BLOCCO TESTATA -->
+<div class="header-mobile-stack">
+    <!-- FASCIA BLU -->
+    <div class="pagina fascia-notizia">
+        <div class="row align-items-center g-0 h-100">
+            <div class="col-12 col-md-3 text-center py-3">
+                prova1
+            </div>
+            <div class="col-12 col-md-9 py-3">
+                prova2
+            </div>
+        </div>
+    </div>
 
+    <!-- LOGO -->
+    <div class="pagina logo-area">
+        <div class="display-2">prova3</div>
+        <div class="mt-3">prova4</div>
+    </div>
+</div>
 <!-- MENU -->
-<div class="pagina menu-area d-flex align-items-center">
-    <div class="container-fluid">
-        <div class="row g-0 text-center text-lg-start">
-            <div class="col-6 col-md-3 col-lg-2 py-2">SEZIONI</div>
-            <div class="col-6 col-md-3 col-lg-2 py-2">EDIZIONI LOCALI</div>
-            <div class="col-6 col-md-3 col-lg-2 py-2">SERVIZI</div>
-            <div class="col-6 col-md-3 col-lg-6 py-2">prova5</div>
+<div class="pagina menu-area">
+    <div class="menu-wrapper">
+
+        <!-- BLOCCO SINISTRO -->
+        <div class="menu-left">
+            <div class="menu-left-item">SEZIONI</div>
+            <div class="menu-left-item">EDIZIONI LOCALI</div>
+            <div class="menu-left-item">SERVIZI</div>
         </div>
+
+        <!-- BLOCCO DESTRO -->
+        <div class="menu-right">
+            <div class="menu-right-scroll">
+                <div class="menu-right-item">prova1</div>
+                <div class="menu-right-item">prova2</div>
+                <div class="menu-right-item">prova3</div>
+                <div class="menu-right-item">prova4</div>
+            </div>
+        </div>
+
     </div>
 </div>
-
 <!-- IMMAGINE GRANDE -->
 <div class="pagina immagine-area">
     immagine
@@ -87,7 +127,7 @@
     <div class="row g-0">
 
         <!-- SINISTRA -->
-        <div class="col-12 col-lg-8 colonna-sinistra">
+        <div class="col-12 col-md-8 colonna-sinistra">
 
             <div class="titolo-sezione">
                 prova primo piano
@@ -198,7 +238,7 @@
         </div>
 
         <!-- DESTRA (STICKY) -->
-        <div class="col-12 col-lg-4 colonna-destra">
+        <div class="col-12 col-md-4 colonna-destra">
             <div class="blocco-sticky p-3">
 
                 <div class="titolo-sezione">

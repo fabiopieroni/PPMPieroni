@@ -296,7 +296,8 @@ body {
 }
 
 .placeholder-card {
-  min-height: 170px;
+  width: 100%;
+  aspect-ratio: 16 / 10;
   border: 1px solid #cfcfcf;
   display: flex;
   align-items: center;
@@ -332,7 +333,7 @@ body {
   align-items: center;
 }
 
-/*nuove newsletter*/
+/*newsletter*/
 .newsletter-sezione {
   padding: 30px 20px;
 }
@@ -519,7 +520,7 @@ body {
 .economia-scroll-mobile {
   display: block;
 }
-
+/*METEO/GIOCHI*/
 .sezione-servizi {
   background: white;
   border-top: 1px solid #bfbfbf;
@@ -699,7 +700,7 @@ body {
 .footer-social {
   display: flex;
   gap: 14px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .footer-social span {
@@ -711,6 +712,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 12px;
+  flex: 0 0 36px;
 }
 
 /* wrapper app + social (in desktop resta verticale) */
@@ -821,6 +823,7 @@ body {
   }
 
   /*immagini456789 in colonna con switch foto-testo*/
+
   .card-mobile-laterale {
     display: flex;
     flex-direction: row-reverse;
@@ -843,209 +846,6 @@ body {
   .card-mobile-laterale .testo-box {
     width: 62%;
     min-height: auto;
-  }
-
-  /*blocco con scritta a sx diventa con scritta sotto*/
-  .blocco-news-mobile .row {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .blocco-news-mobile .col-12.col-md-8 {
-    order: 1;
-    width: 100% !important;
-    max-width: 100% !important;
-    flex: none !important;
-  }
-
-  .blocco-news-mobile .col-12.col-md-4 {
-    order: 2;
-    width: 100% !important;
-    max-width: 100% !important;
-    flex: none !important;
-  }
-
-  .blocco-news-mobile .placeholder-news-grande {
-    width: 100%;
-    min-height: 220px;
-  }
-
-  .blocco-news-mobile .testo-lungo {
-    min-height: auto;
-  }
-
-  /* newsletter in colonna */
-  .newsletter-sezione .row {
-    display: block;
-  }
-
-  .newsletter-sezione .col-12,
-  .newsletter-sezione .col-md-6,
-  .newsletter-sezione .col-lg-4 {
-    width: 100%;
-    max-width: 100%;
-    flex: 0 0 100%;
-  }
-
-  .newsletter-box {
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
-    margin-bottom: 28px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #dddddd;
-  }
-
-  .newsletter-icona {
-    width: 46px;
-    height: 46px;
-  }
-
-  .newsletter-titolo {
-    font-size: 24px;
-    margin-bottom: 8px;
-  }
-
-  .newsletter-linea {
-    margin-bottom: 10px;
-  }
-
-  .newsletter-autore {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-
-  .newsletter-testo {
-    font-size: 15px;
-    line-height: 1.5;
-  }
-
-  /*video scroll*/
-  .video-scroll {
-    overflow-x: auto;
-    padding-bottom: 8px;
-  }
-
-  .video-item {
-    flex: 0 0 260px;
-    min-width: 260px;
-  }
-
-  .video-img {
-    min-height: 120px;
-  }
-
-  .video-testo {
-    font-size: 14px;
-  }
-
-  /*economia*/
-  .sezione-economia {
-    padding: 16px !important;
-  }
-
-  .economia-layout {
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-  }
-
-  .economia-centro {
-    order: 1;
-    align-items: center;
-  }
-
-  .economia-col-sx {
-    order: 2;
-    border-right: none;
-    padding-right: 0;
-  }
-
-  .economia-col-dx {
-    order: 3;
-    border-left: none;
-    padding-left: 0;
-    width: 100%;
-    min-width: 0;
-  }
-
-  .economia-img {
-    width: 100%;
-    min-height: 210px;
-  }
-
-  .economia-contenuto-centro {
-    width: 100%;
-    max-width: 100%;
-    padding: 14px 10px 0;
-    text-align: center;
-  }
-
-  .economia-titolo-centro {
-    font-size: 24px;
-    line-height: 1.18;
-    margin-bottom: 10px;
-  }
-
-  .economia-autore-centro {
-    font-size: 16px;
-  }
-
-  .economia-col-sx .economia-articolo-lato {
-    margin-bottom: 16px;
-    padding-bottom: 16px;
-  }
-
-  .economia-col-sx .economia-articolo-lato:last-child {
-    margin-bottom: 0;
-  }
-
-  .economia-scroll-mobile {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-    gap: 0;
-    width: 100%;
-    min-width: 0;
-    padding-bottom: 10px;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-  }
-
-  .economia-card-scroll {
-    flex: 0 0 78%;
-    min-width: 78%;
-    max-width: 78%;
-    margin-bottom: 0;
-    padding: 0 16px 0 0;
-    border-bottom: none;
-    border-right: 1px solid #d9d9d9;
-  }
-
-  .economia-card-scroll:last-child {
-    border-right: none;
-    padding-right: 0;
-  }
-
-  .economia-card-scroll .economia-titolo-lato {
-    font-size: 18px;
-    line-height: 1.25;
-    margin-bottom: 10px;
-  }
-
-  .economia-card-scroll .economia-autore-lato {
-    font-size: 14px;
-    line-height: 1.3;
-  }
-
-  .economia-scroll-mobile::-webkit-scrollbar {
-    height: 6px;
-  }
-
-  .economia-scroll-mobile::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
   }
 
   /*METEO*/
@@ -1076,137 +876,41 @@ body {
   .blocco-servizi-superiore > .servizio-colonna:nth-child(2) > .servizio-bottone {
     display: none;
   }
-
-  /*FOOTER*/
-  .footer-colonna-sinistra {
-    border-right: none;
-    padding: 28px 28px 24px 28px;
-    text-align: center;
-  }
-
-  .footer-logo,
-  .footer-testo-piccolo,
-  .footer-bottone {
-    text-align: center;
-  }
-
-  .footer-logo {
-    font-size: 38px;
-    margin-bottom: 28px;
-  }
-
-  .footer-testo-piccolo {
-    font-size: 15px;
-    margin-bottom: 24px;
-  }
-
-  .footer-bottone {
-    display: inline-block;
-    padding: 16px 34px;
-    font-size: 16px;
-  }
-
-  .footer-linea {
-    margin: 18px 0;
-  }
-
-  .footer-app-social {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-    text-align: left;
-  }
-
-  .footer-app,
-  .footer-social-blocco {
-    flex: 1;
-  }
-
-  .footer-link-riga {
-    white-space: nowrap;
-    font-size: 15px;
-  }
-
-  .footer-social {
-    display: flex;
-    gap: 10px;
-    flex-wrap: nowrap;
-  }
-
-  .footer-social span {
-    width: 42px;
-    height: 42px;
-    flex: 0 0 auto;
-  }
-
-  /* DESTRA */
-  .footer-colonna-destra {
-    padding: 24px 28px 32px 28px;
-  }
-
-  .footer-titolo-sezione {
-    font-size: 16px;
-    margin-bottom: 14px;
-  }
-
-  .footer-links-orizzontali {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px 20px;
-    font-size: 15px;
-  }
-
-  .footer-colonna-destra > .row.g-4 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 26px 34px;
-    margin: 0;
-  }
-
-  .footer-colonna-destra > .row.g-4 > [class*="col-"] {
-    width: auto;
-    max-width: none;
-    flex: none;
-    padding: 0;
-  }
-
-  .footer-lista div {
-    font-size: 15px;
-    margin-bottom: 12px;
-  }
-
-  .footer-linea-larga {
-    margin-top: 18px;
-  }
-
-  .footer-network-lena .footer-links-orizzontali {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px 20px;
-  }
-
-  .footer-finale-contenitore {
-    padding: 16px 18px 22px 18px;
-  }
-
-  .footer-finale-links {
-    gap: 10px 14px;
-    font-size: 12px;
-  }
-
-  .footer-finale-copyright {
-    font-size: 12px;
-    line-height: 1.4;
-  }
 }
   @media (min-width: 768px) {
     .topbar {
       display: flex !important;
     }
-
     .topbar-mobile-wrap {
       display: none !important;
+    }
+
+    /*3 IMMAGINI*/
+    .card-mobile-laterale {
+      display: block;
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+    .card-mobile-laterale .placeholder-card,
+    .card-mobile-laterale .testo-box {
+      width: 100%;
+    }
+    .card-mobile-laterale .placeholder-card {
+      aspect-ratio: 4 / 3;
+      margin-bottom: .5rem !important;
+    }
+
+    /*FOOTER*/
+    .footer-principale .row.g-0 {
+      flex-wrap: nowrap;
+    }
+    .footer-colonna-sinistra {
+      width: 320px;
+      min-width: 320px;
+    }
+    .footer-colonna-destra {
+      min-width: 0;
+      flex: 1 1 auto;
     }
   }
 
@@ -1397,6 +1101,12 @@ body {
   .menu-right-scroll {
     justify-content: flex-start;
   }
+
+  /*IMMAGINE*/
+  .immagine-area {
+    display: none;
+  }
+
   /*COLONNE*/
   .colonna-sinistra {
     border-right: none;
@@ -1411,18 +1121,437 @@ body {
   .placeholder-grande {
     min-height: 300px;
   }
+
+  .blocco-news-mobile .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* immagine sopra */
+  .blocco-news-mobile .col-12.col-md-8 {
+    order: 1;
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  /* testo sotto */
+  .blocco-news-mobile .col-12.col-md-4 {
+    order: 2;
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .blocco-news-mobile .placeholder-news-grande {
+    width: 100%;
+    min-height: 220px;
+  }
+
+  .blocco-news-mobile .testo-lungo {
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 12px 10px;
+  }
+  /*3 IMMAGINI*/
+  .card-mobile-laterale {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 12px;
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 14px;
+  }
+
+  .card-mobile-laterale .placeholder-card {
+    width: 38%;
+    aspect-ratio: 4 / 3;
+    margin-bottom: 0 !important;
+    flex-shrink: 0;
+  }
+
+  .card-mobile-laterale .testo-box {
+    width: 62%;
+    min-height: auto;
+  }
+  /* newsletter in colonna */
+  .newsletter-sezione .row {
+    display: block;
+  }
+
+  .newsletter-sezione .col-12,
+  .newsletter-sezione .col-md-6,
+  .newsletter-sezione .col-lg-4 {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .newsletter-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 28px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #dddddd;
+  }
+
+  .newsletter-icona {
+    width: 46px;
+    height: 46px;
+  }
+
+  .newsletter-titolo {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  .newsletter-linea {
+    margin-bottom: 10px;
+  }
+
+  .newsletter-autore {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .newsletter-testo {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  /*video scroll*/
+  .video-scroll {
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+  .video-item {
+    flex: 0 0 260px;
+    min-width: 260px;
+  }
+  .video-img {
+    min-height: 120px;
+  }
+  .video-testo {
+    font-size: 14px;
+  }
+
+  /* economia */
+  .sezione-economia {
+    padding: 16px !important;
+  }
+  .economia-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .economia-centro {
+    order: 1;
+    width: 100%;
+    min-width: 0;
+    align-items: stretch;
+  }
+  .economia-col-sx {
+    order: 2;
+    width: 100%;
+    min-width: 0;
+    border-right: none;
+    padding-right: 0;
+  }
+  .economia-col-dx {
+    order: 3;
+    width: 100%;
+    min-width: 0;
+    border-left: none;
+    padding-left: 0;
+  }
+  .economia-img {
+    width: 100%;
+    min-height: 210px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .economia-contenuto-centro {
+    width: 100%;
+    max-width: 100%;
+    padding: 14px 0 0;
+    text-align: center;
+  }
+  .economia-titolo-centro {
+    font-size: 24px;
+    line-height: 1.15;
+    margin-bottom: 10px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  .economia-autore-centro {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  .economia-col-sx .economia-articolo-lato {
+    width: 100%;
+    margin-bottom: 18px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #d9d9d9;
+  }
+  .economia-col-sx .economia-articolo-lato:last-child {
+    margin-bottom: 0;
+  }
+  .economia-col-sx .economia-titolo-lato {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  .economia-col-sx .economia-autore-lato {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  .economia-scroll-mobile {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 12px;
+    width: 100%;
+    min-width: 0;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scroll-snap-type: x proximity;
+  }
+  .economia-card-scroll {
+    flex: 0 0 85%;
+    min-width: 85%;
+    max-width: 85%;
+    margin-bottom: 0;
+    padding: 0 12px 0 0;
+    border-bottom: none;
+    border-right: 1px solid #d9d9d9;
+    scroll-snap-align: start;
+  }
+  .economia-card-scroll:last-child {
+    border-right: none;
+    padding-right: 0;
+  }
+  .economia-card-scroll .economia-titolo-lato {
+    font-size: 18px;
+    line-height: 1.22;
+    margin-bottom: 8px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  .economia-card-scroll .economia-autore-lato {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  .economia-scroll-mobile::-webkit-scrollbar {
+    height: 6px;
+  }
+  .economia-scroll-mobile::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+
+  /* FOOTER */
+  .footer-colonna-sinistra {
+    border-right: none;
+    padding: 28px 28px 24px 28px;
+    text-align: center;
+  }
+
+  .footer-logo,
+  .footer-testo-piccolo,
+  .footer-bottone {
+    text-align: center;
+  }
+
+  .footer-logo {
+    font-size: 38px;
+    margin-bottom: 28px;
+  }
+
+  .footer-testo-piccolo {
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+
+  .footer-bottone {
+    display: inline-block;
+    padding: 16px 34px;
+    font-size: 16px;
+  }
+
+  .footer-linea {
+    margin: 18px 0;
+  }
+
+  .footer-app-social {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    text-align: left;
+  }
+
+  .footer-app {
+    flex: 0 1 145px;
+    min-width: 95px;
+  }
+
+  .footer-social-blocco {
+    flex: 0 0 auto;
+    margin-left: 0;
+  }
+
+  .footer-titolo-mini {
+    margin-bottom: 12px;
+  }
+
+  .footer-link-riga {
+    white-space: normal;
+    font-size: 15px;
+    line-height: 1.1;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  .footer-social {
+    display: flex;
+    gap: 8px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .footer-social span {
+    width: 30px;
+    height: 30px;
+    flex: 0 0 30px;
+  }
+
+  /* DESTRA */
+  .footer-colonna-destra {
+    padding: 24px 28px 32px 28px;
+  }
+
+  .footer-titolo-sezione {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+
+  .footer-links-orizzontali {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 20px;
+    font-size: 15px;
+  }
+
+  .footer-colonna-destra > .row.g-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px 34px;
+    margin: 0;
+  }
+
+  .footer-colonna-destra > .row.g-4 > [class*="col-"] {
+    width: auto;
+    max-width: none;
+    flex: none;
+    padding: 0;
+  }
+
+  .footer-lista div {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+
+  .footer-linea-larga {
+    margin-top: 18px;
+  }
+
+  .footer-network-lena .footer-links-orizzontali {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 20px;
+  }
+
+  .footer-finale-contenitore {
+    padding: 16px 18px 22px 18px;
+  }
+
+  .footer-finale-links {
+    gap: 10px 14px;
+    font-size: 12px;
+  }
+
+  .footer-finale-copyright {
+    font-size: 12px;
+    line-height: 1.4;
+  }
 }
 
+/*SEZIONE METEO(CAMBIA DA 767PX A 481PX)*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .blocco-servizi-superiore {
+    padding-top: 0;
+  }
+  .servizio-colonna:not(:last-child) {
+    border-right: none;
+  }
+  .servizio-colonna {
+    padding: 18px;
+  }
+  .servizio-colonna-meteo {
+    flex: 0 0 70%;
+    max-width: 70%;
+    border-right: 1px solid #dddddd;
+  }
+  .servizio-colonna-previsioni {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+  .servizio-colonna-gioco {
+    flex: 0 0 50%;
+    max-width: 50%;
+    border-top: 1px solid #dddddd;
+    padding-top: 14px;
+  }
+  .servizio-colonna-gioco:last-child {
+    border-left: 1px solid #dddddd;
+  }
+  .meteo-header-mobile .servizio-bottone-mobile {
+    display: none !important;
+  }
+  .servizio-bottone-desktop {
+    display: inline-block !important;
+  }
+  .gioco-testo-mobile {
+    display: none !important;
+  }
+  .gioco-testo-desktop {
+    display: block !important;
+  }
+  .servizio-box-grande {
+    min-height: 220px;
+  }
+  .servizio-box-piccolo {
+    min-height: 185px;
+  }
+  .servizio-colonna-previsioni .icona-testo:first-of-type {
+    border-top: none;
+    padding-top: 0;
+  }
+  .servizio-colonna-previsioni .servizio-bottone {
+    margin-bottom: 18px !important;
+  }
+}
 
-
-/*NEWSLETTER NON CAMBIARE FINO A TABLET
-ICONE IN FONDO  DEVONO STARE IN RIGA*/
-
-/*PRIMA IMMAGINE VA VIA
-3 IMMAGINI IN COLONNA CON TESTO SX E IMMAGINE DX
-I VIDEO SCROLLANO
-ECONOMIA COME IN MOBILE
-METEO DA CAMBIARE
-PIE DI PAGINA COME MOBILE*/
-
-
+/*VIDEO DEL GIORNO IN TABLET e MOBILE VA SULLA FOTO STESSA
+*/

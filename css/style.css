@@ -1,11 +1,11 @@
 body {
   margin: 0;
   background: #efefef;
-  padding-top: 70px;
+  padding-top: 110px;
 }
 
 .pagina {
-  max-width: 1180px;
+  max-width: 996px;
   margin: 0 auto;
   background: white;
 }
@@ -17,7 +17,7 @@ body {
   box-sizing: border-box;
 }
 .topbar {
-  height: 70px;
+  height: 56px;
   border: 1px solid #bfbfbf;
   background: #fff;
   position: sticky;
@@ -124,24 +124,50 @@ body {
 /* FASCIA BLU */
 .fascia-notizia {
   width: 100%;
-  min-height: 120px;
+  min-height: 110px;
   background: #435163;
   color: white;
   border-left: 1px solid #bfbfbf;
   border-right: 1px solid #bfbfbf;
   border-bottom: 1px solid #bfbfbf;
   box-sizing: border-box;
+  padding: 0 16px;
+}
+.fascia-notizia .row {
+  display: flex;
+  align-items: flex-start;
+  min-height: 110px;
+  margin: 0;
+}
+.fascia-media {
+  flex: 0 0 140px !important;
+  max-width: 140px !important;
+  width: 140px !important;
+  height: 80px;
+  overflow: hidden;
+  position: relative;
 }
 
-.fascia-notizia .row {
-  min-height: 120px;
-  margin: 0;
+.fascia-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.fascia-text {
+  flex: 1;
+  align-self: flex-start;
+  padding-left: 12px;
+  padding-top: 4px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 /* LOGO */
 .logo-area {
   width: 100%;
-  min-height: 230px;
+  min-height: 160px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -157,13 +183,13 @@ body {
 /* MENU */
 .menu-area {
   border: 1px solid #bfbfbf;
-  min-height: 70px;
+  min-height: 52px;
   width: 100%;
 }
 .menu-wrapper {
   display: flex;
   align-items: stretch;
-  min-height: 70px;
+  min-height: 52px;
   width: 100%;
 }
 .menu-left {
@@ -177,7 +203,7 @@ body {
 }
 .menu-left-item {
   padding: 0 22px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: #333;
   position: relative;
@@ -216,7 +242,7 @@ body {
   font-size: 18px;
   font-weight: 600;
   color: #7a7a7a;
-  padding: 20px 0;
+  padding: 15px 0;
 }
 .menu-right-scroll::-webkit-scrollbar {
   height: 6px;
@@ -231,7 +257,7 @@ body {
 
 /* IMMAGINE */
 .immagine-area {
-  min-height: 320px;
+  min-height: 200px;
   border-left: 1px solid #bfbfbf;
   border-right: 1px solid #bfbfbf;
   border-bottom: 1px solid #bfbfbf;
@@ -242,7 +268,7 @@ body {
 
 /* CONTENUTO */
 .contenuto-sotto {
-  max-width: 1180px;
+  max-width: 996px;
   margin: 0 auto;
   border-left: 1px solid #bfbfbf;
   border-right: 1px solid #bfbfbf;
@@ -953,6 +979,9 @@ body {
   /*TABLET*/
 @media screen and (max-width: 767px) {
   /*NOSCROLLONPAGE*/
+  body {
+    padding-top: 80px;
+  }
   .pagina {
     max-width: 100% !important;
     margin: 0 !important;
@@ -1057,6 +1086,7 @@ body {
     flex-direction: column !important;
     width: 100% !important;
   }
+
   .logo-area {
     order: 1 !important;
   }
@@ -1099,32 +1129,52 @@ body {
   .fascia-notizia {
     width: 100% !important;
     max-width: 100% !important;
-    min-height: 120px !important;
+    min-height: 80px !important;
     margin: 0 !important;
     box-sizing: border-box !important;
   }
+
   .fascia-notizia .row {
-    display: block !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
     width: 100% !important;
-    min-height: 120px !important;
+    min-height: 80px !important;
     margin: 0 !important;
   }
+
   .fascia-notizia [class*="col-"] {
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    flex: 0 0 100% !important;
     margin: 0 !important;
   }
-  .fascia-notizia .col-12:first-child {
+
+  .fascia-notizia .fascia-media {
+    flex: 0 0 120px !important;
+    max-width: 120px !important;
+    width: 120px !important;
+    height: 70px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
     text-align: center !important;
-    padding-top: 12px !important;
-    padding-bottom: 6px !important;
   }
-  .fascia-notizia .col-12:last-child {
+
+  .fascia-notizia .fascia-media video,
+  .fascia-notizia .fascia-media img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+
+  .fascia-notizia .fascia-text {
+    flex: 1 1 auto !important;
+    max-width: calc(100% - 120px) !important;
+    width: auto !important;
+    padding: 0 12px !important;
     text-align: left !important;
-    padding-top: 6px !important;
-    padding-bottom: 12px !important;
+    color: white !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 1.25 !important;
   }
 
   /*MENU*/

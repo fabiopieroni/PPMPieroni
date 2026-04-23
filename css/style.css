@@ -99,9 +99,6 @@ body {
   white-space: nowrap;
   color: #1f2a37;
 }
-.topbar-mobile-wrap {
-  display: none;
-}
 .topbar-item {
   display: flex;
   align-items: center;
@@ -109,10 +106,13 @@ body {
   font-size: 15px;
   color: #1f2a37;
 }
-
 .topbar-item i {
   font-size: 18px;
   line-height: 1;
+}
+/* logo nella topbar scroll */
+.topbar-logo-scroll {
+  display: none;
 }
 
 /* WRAPPER */
@@ -147,6 +147,11 @@ body {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+}
+.logo-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* MENU */
@@ -884,6 +889,37 @@ body {
     .topbar-mobile-wrap {
       display: none !important;
     }
+    .topbar > .d-flex {
+      position: relative;
+    }
+    /* STATO NORMALE */
+    .topbar > .d-flex > .topbar-abbonati {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: all 0.25s ease;
+    }
+    .topbar-logo-scroll {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 34px;
+      width: auto;
+      display: none;
+    }
+    /* STATO SCROLL */
+    .topbar.topbar-scrolled > .d-flex > .topbar-abbonati {
+      position: static;
+      left: auto;
+      transform: none;
+      margin-left: auto;
+      margin-right: 14px;
+    }
+
+    .topbar.topbar-scrolled .topbar-logo-scroll {
+      display: block;
+    }
 
     /*3 IMMAGINI*/
     .card-mobile-laterale {
@@ -1045,7 +1081,7 @@ body {
     border-bottom: 1px solid #dcdcdc;
     box-sizing: border-box !important;
   }
-  .logo-area .display-2 {
+  .logo-area .logo-img {
     display: none !important;
   }
   .logo-area .mt-3 {

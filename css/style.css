@@ -146,7 +146,6 @@ body {
   overflow: hidden;
   position: relative;
 }
-
 .fascia-media img {
   width: 100%;
   height: 100%;
@@ -286,12 +285,9 @@ body {
   border-right: 1px solid #bfbfbf;
   min-height: 900px;
 }
-
 .colonna-destra {
   min-height: 900px;
 }
-
-/* STICKY */
 .blocco-sticky {
   position: sticky;
   top: 70px;
@@ -304,12 +300,32 @@ body {
   font-weight: bold;
   margin: 20px 0;
 }
-
 .sottolinea {
   width: 180px;
   height: 4px;
   background: #d9482b;
   margin: 8px auto 0;
+}
+.primo-piano-testi {
+  text-align: center;
+}
+.primo-piano-label {
+  color: #d9482b;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.primo-piano-titolo {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+.primo-piano-firma {
+  font-size: 18px;
+  font-style: italic;
+  color: #555;
 }
 
 
@@ -323,25 +339,19 @@ body {
   background: #f7f7f7;
   border: 1px solid #cfcfcf;
 }
-
 .placeholder-grande {
   min-height: 480px;
 }
-
 .placeholder-video {
   min-height: 700px;
 }
-
 .placeholder-card {
   width: 100%;
   aspect-ratio: 16 / 10;
 }
-
 .placeholder-news-grande {
   min-height: 320px;
 }
-
-/* IMMAGINI DENTRO I PLACEHOLDER */
 .placeholder-grande > img,
 .placeholder-video > img,
 .placeholder-card > img,
@@ -354,20 +364,15 @@ body {
   display: block;
   object-fit: fill;
 }
-
 .testo-box {
   min-height: 120px;
 }
-
 .texto-centro {
   text-align: center;
 }
-
-
 .blocco-news-grande {
   border-top: 1px solid #bfbfbf;
 }
-
 .placeholder-news-grande {
   min-height: 320px;
   border: 1px solid #cfcfcf;
@@ -376,38 +381,52 @@ body {
   justify-content: center;
   background: #f7f7f7;
 }
-
 .testo-lungo {
   min-height: 320px;
   display: flex;
   align-items: center;
+}
+.video-giorno-box {
+  position: relative;
+}
+.testo-video-sopra {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  bottom: 28px;
+  z-index: 2;
+  color: white;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.1;
 }
 
 /*newsletter*/
 .newsletter-sezione {
   padding: 30px 20px;
 }
-
 .newsletter-box {
   display: flex;
   align-items: flex-start;
   gap: 18px;
   margin-bottom: 36px;
 }
-
 .newsletter-icona {
   width: 60px;
   height: 60px;
   flex-shrink: 0;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 }
-
+.newsletter-icona i {
+  font-size: 42px;
+  color: #1f2f3a;
+}
 .newsletter-contenuto {
   flex: 1;
 }
-
 .newsletter-titolo {
   font-size: 34px;
   font-weight: bold;
@@ -415,14 +434,12 @@ body {
   line-height: 1.05;
   margin-bottom: 10px;
 }
-
 .newsletter-linea {
   height: 2px;
   background: #e56522;
   width: 100%;
   margin-bottom: 12px;
 }
-
 .newsletter-autore {
   font-size: 16px;
   font-style: italic;
@@ -430,7 +447,6 @@ body {
   line-height: 1.3;
   margin-bottom: 14px;
 }
-
 .newsletter-testo {
   font-size: 18px;
   line-height: 1.45;
@@ -442,11 +458,9 @@ body {
   color: white;
   border-top: 1px solid #bfbfbf;
 }
-
 .titolo-su-scuro {
   color: white;
 }
-
 .video-scroll {
   display: flex;
   flex-wrap: nowrap;
@@ -457,11 +471,9 @@ body {
   flex: 1 1 0;
   min-width: 0;
 }
-
 .video-card {
   min-height: 100%;
 }
-
 .video-img {
   min-height: 140px;
   border: 1px solid rgba(255,255,255,0.25);
@@ -469,133 +481,142 @@ body {
   align-items: center;
   justify-content: center;
   background: rgba(255,255,255,0.08);
+  position: relative;
+  overflow: hidden;
+}
+.video-img img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  display: block;
+}
+.video-testo {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: white;
+  margin-top: 16px;
+}
+.video-label {
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.video-titolo {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.15;
 }
 
-.video-testo {
-  font-size: 16px;
-  line-height: 1.4;
-}
 /* ECONOMIA */
 .sezione-economia {
   background: white;
   border-top: 1px solid #bfbfbf;
 }
-
 .economia-layout {
   display: grid;
   grid-template-columns: 1fr 3fr 1.9fr;
   gap: 24px;
   align-items: start;
 }
-
 .economia-col {
   display: flex;
   flex-direction: column;
 }
-
 .economia-col-sx {
   padding-right: 24px;
   border-right: 1px solid #d9d9d9;
 }
-
 .economia-col-dx {
   padding-left: 24px;
   border-left: 1px solid #d9d9d9;
 }
-
 .economia-articolo-lato {
   padding-bottom: 24px;
   margin-bottom: 24px;
   border-bottom: 1px solid #d9d9d9;
 }
-
 .economia-articolo-lato.no-border {
   border-bottom: none;
   margin-bottom: 0;
   padding-bottom: 0;
 }
-
 .economia-titolo-lato {
   margin: 0 0 10px 0;
   font-size: 22px;
   line-height: 1.2;
   font-weight: 700;
 }
-
 .economia-autore-lato {
   font-size: 16px;
   line-height: 1.3;
   font-style: italic;
   color: #666;
 }
-
 .economia-centro {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .economia-img {
   width: 100%;
   min-height: 420px;
   border: 1px solid #cfcfcf;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: #f7f7f7;
   overflow: hidden;
 }
-
+.economia-img img {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  display: block;
+  object-fit: fill;
+}
 .economia-contenuto-centro {
   text-align: center;
   padding: 18px 30px 0;
   max-width: 900px;
   margin: 0 auto;
 }
-
 .economia-titolo-centro {
   margin: 0 0 12px 0;
   font-size: 34px;
   line-height: 1.15;
   font-weight: 700;
 }
-
 .economia-autore-centro {
   font-size: 18px;
   line-height: 1.3;
   font-style: italic;
   color: #666;
 }
-
 .economia-scroll-mobile {
   display: block;
 }
+
 /*METEO/GIOCHI*/
 .sezione-servizi {
   background: white;
   border-top: 1px solid #bfbfbf;
 }
-
 .blocco-servizi-superiore {
   border-top: 1px solid #d9d9d9;
   padding-top: 20px;
 }
-
 .servizio-colonna {
   padding: 0 12px;
 }
-
 .servizio-colonna:not(:last-child) {
   border-right: 1px solid #dddddd;
 }
-
 .servizio-titolo {
   font-weight: bold;
   font-size: 18px;
   line-height: 1.1;
   margin-bottom: 12px;
 }
-
 .servizio-bottone {
   display: inline-block;
   padding: 8px 10px;
@@ -605,25 +626,26 @@ body {
   font-size: 14px;
   line-height: 1.2;
 }
-
 .servizio-box-grande {
   min-height: 180px;
   border: 1px solid #cfcfcf;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: #f7f7f7;
+  overflow: hidden;
 }
-
 .servizio-box-piccolo {
   min-height: 140px;
   border: 1px solid #cfcfcf;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: #f7f7f7;
+  overflow: hidden;
 }
-
+.servizio-box-grande img,
+.servizio-box-piccolo img {
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  object-fit: fill;
+  display: block;
+}
 .icona-testo {
   display: flex;
   align-items: center;
@@ -632,7 +654,6 @@ body {
   border-top: 1px solid #e3e3e3;
   padding-top: 10px;
 }
-
 .mini-icona {
   width: 40px;
   height: 40px;
@@ -643,15 +664,12 @@ body {
   background: #fafafa;
   flex-shrink: 0;
 }
-
 .meteo-header-mobile .servizio-bottone-mobile {
   display: none;
 }
-
 .gioco-testo-mobile {
   display: none;
 }
-
 .gioco-testo-desktop {
   line-height: 1.2;
   margin-top: 6px;
@@ -661,24 +679,21 @@ body {
 .blocco-oroscopo {
   border-top: 1px solid #d9d9d9;
 }
-
 .oroscopo-scroll {
   display: flex;
   flex-wrap: nowrap;
   gap: 20px;
-  overflow-x: auto;          /* scroll orizzontale sempre disponibile */
+  overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
   padding-bottom: 10px;
 }
-
 .oroscopo-item {
-  flex: 0 0 auto;            /* non si restringe */
-  width: 90px;               /* larghezza fissa */
+  flex: 0 0 auto;
+  width: 90px;
   text-align: center;
 }
-
 .oroscopo-icona {
   width: 60px;
   height: 60px;
@@ -689,23 +704,19 @@ body {
   justify-content: center;
   background: #fafafa;
 }
-
 .oroscopo-scroll::-webkit-scrollbar {
   height: 8px;
 }
-
 .oroscopo-scroll::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
 
 /*PIE DI PAGINA*/
-
 .footer-principale {
   background: #ffffff;
   border-top: 1px solid #bfbfbf;
 }
-
 .footer-contenitore {
   width: 100%;
 }
@@ -715,25 +726,21 @@ body {
   padding: 40px 35px;
   border-right: 1px solid #bfbfbf;
 }
-
 .footer-logo {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 25px;
   line-height: 1;
 }
-
 .footer-testo-piccolo {
   font-size: 14px;
   margin-bottom: 16px;
   color: #333;
 }
-
 .footer-linea {
   border-top: 1px solid #dddddd;
   margin: 22px 0;
 }
-
 .footer-bottone {
   background: #6f95cb;
   color: white;
@@ -742,14 +749,12 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
-
 .footer-titolo-mini {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 12px;
   color: #111;
 }
-
 .footer-link-riga {
   font-size: 14px;
   text-decoration: underline;
@@ -762,7 +767,6 @@ body {
   gap: 14px;
   flex-wrap: nowrap;
 }
-
 .footer-social span {
   width: 36px;
   height: 36px;
@@ -774,22 +778,18 @@ body {
   font-size: 12px;
   flex: 0 0 36px;
 }
-
-/* wrapper app + social (in desktop resta verticale) */
 .footer-app-social {
   display: block;
 }
 
-/* ===== COLONNA DESTRA ===== */
+/*COLONNA DX*/
 
 .footer-colonna-destra {
   padding: 40px 45px;
 }
-
 .footer-sezione-top {
   margin-bottom: 20px;
 }
-
 .footer-titolo-sezione {
   font-size: 16px;
   font-weight: bold;
@@ -804,38 +804,30 @@ body {
   flex-wrap: wrap;
   font-size: 16px;
 }
-
 .footer-linea-larga {
   border-top: 1px solid #dddddd;
   margin: 20px 0;
 }
-
-/* lista */
 .footer-lista div {
   margin-bottom: 10px;
   font-size: 15px;
   color: #333;
 }
-
-/* network lena */
 .footer-network-lena {
   padding-top: 10px;
 }
 
 /*FOOTER GRIGIO*/
-
 .footer-finale {
   background: #e9e9e9;
   border-top: 1px solid #cfcfcf;
 }
-
 .footer-finale-contenitore {
   max-width: 1180px;
   margin: 0 auto;
   padding: 18px 20px 24px 20px;
   text-align: center;
 }
-
 .footer-finale-links {
   display: flex;
   flex-wrap: wrap;
@@ -844,7 +836,6 @@ body {
   font-size: 13px;
   margin-bottom: 14px;
 }
-
 .footer-finale-copyright {
   font-size: 13px;
   color: #333;
@@ -877,13 +868,11 @@ body {
   .logo-area {
     display: none;
   }
-
   .immagine-area {
     display: none;
   }
 
   /*immagini456789 in colonna con switch foto-testo*/
-
   .card-mobile-laterale {
     display: flex;
     flex-direction: row-reverse;
@@ -895,14 +884,12 @@ body {
     border-bottom: 1px solid #d9d9d9;
     padding-bottom: 14px;
   }
-
   .card-mobile-laterale .placeholder-card {
     width: 38%;
     min-height: 90px;
     margin-bottom: 0 !important;
     flex-shrink: 0;
   }
-
   .card-mobile-laterale .testo-box {
     width: 62%;
     min-height: auto;
@@ -916,12 +903,10 @@ body {
     gap: 12px;
     margin-bottom: 18px;
   }
-
   .meteo-header-mobile .servizio-titolo {
     margin-bottom: 0 !important;
     font-size: 22px;
   }
-
   .meteo-header-mobile .servizio-bottone-mobile {
     display: inline-flex;
     padding: 10px 14px;
@@ -931,8 +916,6 @@ body {
     border: none;
     white-space: nowrap;
   }
-
-
   /* nasconde il vecchio bottone desktop */
   .blocco-servizi-superiore > .servizio-colonna:nth-child(2) > .servizio-bottone {
     display: none;
@@ -992,7 +975,6 @@ body {
       aspect-ratio: 4 / 3;
       margin-bottom: .5rem !important;
     }
-
     .card-mobile-laterale .placeholder-card > img {
       width: 100%;
       height: 100%;
@@ -1012,6 +994,53 @@ body {
     .card-mobile-laterale .placeholder-card {
       aspect-ratio: 4 / 3;
       margin-bottom: .5rem !important;
+    }
+    .articolo-grande {
+      display: block;
+      font-family: Georgia, 'Times New Roman', serif;
+    }
+    .occhiello {
+      color: #d9482b;
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+    .titolo-articolo {
+      color: #1f2f3a;
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 1.15;
+    }
+    .articolo-card {
+      font-family: Georgia, 'Times New Roman', serif;
+    }
+    .titolo-card {
+      color: #1f2f3a;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.15;
+    }
+    .titolo-card span {
+      color: #d9482b;
+    }
+    .firma-articolo {
+      margin-top: 14px;
+      color: #666;
+      font-size: 20px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 1.1;
+    }
+    .occhiello,
+    .titolo-articolo {
+      font-size: 28px;
+    }
+    .titolo-card {
+      font-size: 24px;
+    }
+    .firma-articolo {
+      font-size: 18px;
     }
 
     /*FOOTER*/
@@ -1038,6 +1067,7 @@ body {
     max-width: 100% !important;
     margin: 0 !important;
   }
+
   /*TOPBAR*/
   .topbar {
     display: none !important;
@@ -1124,6 +1154,14 @@ body {
     white-space: nowrap;
     box-sizing: border-box !important;
   }
+  .topbar-logo img {
+    max-width: 166px;
+    max-height: 28px;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+  }
   .topbar-abbonati {
     font-size: 12px !important;
     font-weight: 700;
@@ -1138,7 +1176,6 @@ body {
     flex-direction: column !important;
     width: 100% !important;
   }
-
   .logo-area {
     order: 1 !important;
   }
@@ -1185,7 +1222,6 @@ body {
     margin: 0 !important;
     box-sizing: border-box !important;
   }
-
   .fascia-notizia .row {
     display: flex !important;
     flex-direction: row !important;
@@ -1194,11 +1230,9 @@ body {
     min-height: 80px !important;
     margin: 0 !important;
   }
-
   .fascia-notizia [class*="col-"] {
     margin: 0 !important;
   }
-
   .fascia-notizia .fascia-media {
     flex: 0 0 120px !important;
     max-width: 120px !important;
@@ -1208,7 +1242,6 @@ body {
     padding: 0 !important;
     text-align: center !important;
   }
-
   .fascia-notizia .fascia-media video,
   .fascia-notizia .fascia-media img {
     width: 100% !important;
@@ -1216,7 +1249,6 @@ body {
     object-fit: cover !important;
     display: block !important;
   }
-
   .fascia-notizia .fascia-text {
     flex: 1 1 auto !important;
     max-width: calc(100% - 120px) !important;
@@ -1259,7 +1291,6 @@ body {
   .placeholder-grande {
     min-height: 300px;
   }
-
   .blocco-news-mobile .row {
     display: flex;
     flex-direction: column;
@@ -1280,12 +1311,10 @@ body {
     max-width: 100%;
     flex: 0 0 100%;
   }
-
   .blocco-news-mobile .placeholder-news-grande {
     width: 100%;
     min-height: 220px;
   }
-
   .blocco-news-mobile .testo-lungo {
     min-height: auto;
     display: flex;
@@ -1294,6 +1323,7 @@ body {
     text-align: center;
     padding: 12px 10px;
   }
+
   /*3 IMMAGINI*/
   .card-mobile-laterale {
     display: flex;
@@ -1303,23 +1333,33 @@ body {
     border-bottom: 1px solid #d9d9d9;
     padding-bottom: 14px;
   }
-
   .card-mobile-laterale .placeholder-card {
     width: 38%;
     aspect-ratio: 4 / 3;
     margin-bottom: 0 !important;
     flex-shrink: 0;
   }
-
   .card-mobile-laterale .testo-box {
     width: 62%;
     min-height: auto;
   }
+  .primo-piano-label {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .primo-piano-titolo {
+    font-size: 28px;
+    line-height: 1.15;
+    margin-bottom: 8px;
+  }
+  .primo-piano-firma {
+    font-size: 15px;
+  }
+
   /* newsletter in colonna */
   .newsletter-sezione .row {
     display: block;
   }
-
   .newsletter-sezione .col-12,
   .newsletter-sezione .col-md-6,
   .newsletter-sezione .col-lg-4 {
@@ -1327,7 +1367,6 @@ body {
     max-width: 100%;
     flex: 0 0 100%;
   }
-
   .newsletter-box {
     display: flex;
     align-items: flex-start;
@@ -1336,26 +1375,21 @@ body {
     padding-bottom: 24px;
     border-bottom: 1px solid #dddddd;
   }
-
   .newsletter-icona {
     width: 46px;
     height: 46px;
   }
-
   .newsletter-titolo {
     font-size: 24px;
     margin-bottom: 8px;
   }
-
   .newsletter-linea {
     margin-bottom: 10px;
   }
-
   .newsletter-autore {
     font-size: 14px;
     margin-bottom: 10px;
   }
-
   .newsletter-testo {
     font-size: 15px;
     line-height: 1.5;
@@ -1410,10 +1444,14 @@ body {
     width: 100%;
     min-height: 210px;
     aspect-ratio: 16 / 9;
-    object-fit: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
+  }
+  .economia-img img {
+    width: 100%;
+    height: 100%;
+    min-height: 210px;
+    display: block;
+    object-fit: fill;
   }
   .economia-contenuto-centro {
     width: 100%;
@@ -1504,33 +1542,27 @@ body {
     padding: 28px 28px 24px 28px;
     text-align: center;
   }
-
   .footer-logo,
   .footer-testo-piccolo,
   .footer-bottone {
     text-align: center;
   }
-
   .footer-logo {
     font-size: 38px;
     margin-bottom: 28px;
   }
-
   .footer-testo-piccolo {
     font-size: 15px;
     margin-bottom: 24px;
   }
-
   .footer-bottone {
     display: inline-block;
     padding: 16px 34px;
     font-size: 16px;
   }
-
   .footer-linea {
     margin: 18px 0;
   }
-
   .footer-app-social {
     display: flex;
     align-items: flex-start;
@@ -1538,21 +1570,17 @@ body {
     gap: 8px;
     text-align: left;
   }
-
   .footer-app {
     flex: 0 1 145px;
     min-width: 95px;
   }
-
   .footer-social-blocco {
     flex: 0 0 auto;
     margin-left: 0;
   }
-
   .footer-titolo-mini {
     margin-bottom: 12px;
   }
-
   .footer-link-riga {
     white-space: normal;
     font-size: 15px;
@@ -1560,14 +1588,12 @@ body {
     overflow-wrap: break-word;
     word-break: normal;
   }
-
   .footer-social {
     display: flex;
     gap: 8px;
     flex-wrap: nowrap;
     justify-content: flex-start;
   }
-
   .footer-social span {
     width: 30px;
     height: 30px;
@@ -1578,57 +1604,47 @@ body {
   .footer-colonna-destra {
     padding: 24px 28px 32px 28px;
   }
-
   .footer-titolo-sezione {
     font-size: 16px;
     margin-bottom: 14px;
   }
-
   .footer-links-orizzontali {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 12px 20px;
     font-size: 15px;
   }
-
   .footer-colonna-destra > .row.g-4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 26px 34px;
     margin: 0;
   }
-
   .footer-colonna-destra > .row.g-4 > [class*="col-"] {
     width: auto;
     max-width: none;
     flex: none;
     padding: 0;
   }
-
   .footer-lista div {
     font-size: 15px;
     margin-bottom: 12px;
   }
-
   .footer-linea-larga {
     margin-top: 18px;
   }
-
   .footer-network-lena .footer-links-orizzontali {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12px 20px;
   }
-
   .footer-finale-contenitore {
     padding: 16px 18px 22px 18px;
   }
-
   .footer-finale-links {
     gap: 10px 14px;
     font-size: 12px;
   }
-
   .footer-finale-copyright {
     font-size: 12px;
     line-height: 1.4;
@@ -1691,5 +1707,12 @@ body {
   }
 }
 
-/*VIDEO DEL GIORNO IN TABLET e MOBILE VA SULLA FOTO STESSA
-*/
+/*CAMBIARE FONT*/
+/*MENU TENDINA*/
+/*BARRA RICERCA*/
+/*LINK TUTTO*/
+/*COLORE LINK*/
+/*CAMBIARE DIV,NAV...*/
+/*DISABILI CHECK*/
+/*RICONTROLLARE*/
+

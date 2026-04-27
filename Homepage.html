@@ -14,120 +14,115 @@
 </head>
 <body>
 
-
-<!-- BARRA ALTA DESKTOP -->
-<div class="pagina topbar d-flex align-items-center px-3">
-    <div class="d-flex justify-content-between align-items-center w-100">
-
-        <div class="d-flex gap-4 flex-wrap topbar-left">
-            <div class="topbar-item">
-                <i class="bi bi-list"></i>
-                <span>Menu</span>
-            </div>
-
-            <div class="topbar-item">
-                <i class="bi bi-search"></i>
-                <span>Cerca</span>
-            </div>
-
-            <div class="topbar-item">
-                <i class="bi bi-bell"></i>
-                <span>Notifiche</span>
-            </div>
-        </div>
-
-        <div class="topbar-abbonati">ABBONATI</div>
-
-        <!-- LOGO CHE APPARE SOLO IN SCROLL -->
-        <img src="img/PPMlogoalto.png" alt="Logo" class="topbar-logo-scroll">
-
-        <div class="topbar-item topbar-right">
+<!--TOPBAR-->
+<header class="pagina topbar d-flex align-items-center px-3" aria-label="Barra superiore desktop">
+    <nav class="d-flex justify-content-between align-items-center w-100" aria-label="Navigazione principale">
+        <ul class="d-flex gap-4 flex-wrap topbar-left">
+            <li>
+                <button class="topbar-item" type="button">
+                    <i class="bi bi-list" aria-hidden="true"></i>
+                    <span>Menu</span>
+                </button>
+            </li>
+            <li>
+                <button class="topbar-item" type="button">
+                    <i class="bi bi-search" aria-hidden="true"></i>
+                    <span>Cerca</span>
+                </button>
+            </li>
+            <li>
+                <button class="topbar-item" type="button">
+                    <i class="bi bi-bell" aria-hidden="true"></i>
+                    <span>Notifiche</span>
+                </button>
+            </li>
+        </ul>
+        <a href="#" class="topbar-abbonati">ABBONATI</a>
+        <img src="img/PPMlogoalto.png" alt="Logo PPM" class="topbar-logo-scroll">
+        <button class="topbar-item topbar-right" type="button">
             <span>Accedi</span>
-            <i class="bi bi-person"></i>
-        </div>
+            <i class="bi bi-person" aria-hidden="true"></i>
+        </button>
+    </nav>
+</header>
 
-    </div>
-</div>
-
-<!-- BARRA ALTA MOBILE / TABLET -->
-<div class="topbar-mobile-wrap">
+<!--TOPBAR MOBILE/TABLET-->
+<header class="topbar-mobile-wrap" aria-label="Barra superiore mobile">
     <div class="pagina pagina-mobile-topbar">
         <div class="topbar-riga1">
-            <div class="topbar-notifica">
-                <i class="bi bi-bell"></i>
+            <button class="topbar-notifica" type="button">
+                <i class="bi bi-bell" aria-hidden="true"></i>
                 <span class="label-mobile-hide">Notifiche</span>
-            </div>
-
-            <div class="topbar-abbonati">ABBONATI</div>
+            </button>
+            <a href="#" class="topbar-abbonati">ABBONATI</a>
         </div>
-
-        <div class="topbar-riga2">
-            <div class="topbar-menu">
-                <i class="bi bi-list"></i>
+        <nav class="topbar-riga2" aria-label="Navigazione mobile">
+            <button class="topbar-menu" type="button">
+                <i class="bi bi-list" aria-hidden="true"></i>
                 <span class="label-mobile-hide">Menu</span>
-            </div>
-
-            <div class="topbar-logo">
-                <img src="img/PPMlogoalto.png" alt="logo alto">
-            </div>
-
-            <div class="topbar-utente">
-                <i class="bi bi-person"></i>
+            </button>
+            <a href="#" class="topbar-logo" aria-label="Homepage">
+                <img src="img/PPMlogoalto.png" alt="Logo PPM">
+            </a>
+            <button class="topbar-utente" type="button">
+                <i class="bi bi-person" aria-hidden="true"></i>
                 <span class="label-mobile-hide">Accedi</span>
-            </div>
-        </div>
+            </button>
+        </nav>
     </div>
-</div>
+</header>
 
 <!-- BLOCCO BLU -->
 <div class="header-mobile-stack">
-    <div class="pagina fascia-notizia">
+    <section class="pagina fascia-notizia" aria-label="Notizia in evidenza">
         <div class="row align-items-center g-0 h-100">
             <!-- VIDEO / IMMAGINE -->
-            <div class="col-12 col-md-3 fascia-media">
+            <figure class="col-12 col-md-3 fascia-media">
                 <img src="img/PPMfasciablu.png" alt="Video fascia blu">
-            </div>
+            </figure>
             <!-- TESTO -->
-            <div class="col-12 col-md-9 fascia-text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-            </div>
-
+            <article class="col-12 col-md-9 fascia-text">
+                <h2 class="fascia-title">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                </h2>
+            </article>
         </div>
-    </div>
+    </section>
 
     <!-- LOGO -->
-    <div class="pagina logo-area">
-        <img src="img/PPMlogo.png" alt="Logo" class="logo-img">
-        <div class="mt-3">Lorem Ipsum è un testo segnaposto utilizzato</div>
-    </div>
+    <header class="pagina logo-area">
+        <figure class="logo-figure">
+            <img src="img/PPMlogo.png" alt="Logo PPM" class="logo-img">
+        </figure>
+        <p class="logo-text">
+            Lorem Ipsum è un testo segnaposto utilizzato
+        </p>
+    </header>
 </div>
+
 <!-- MENU -->
-<div class="pagina menu-area">
+<nav class="pagina menu-area">
     <div class="menu-wrapper">
-
-        <!-- BLOCCO SINISTRO -->
-        <div class="menu-left">
-            <div class="menu-left-item">SEZIONI</div>
-            <div class="menu-left-item">EDIZIONI LOCALI</div>
-            <div class="menu-left-item">SERVIZI</div>
-        </div>
-
-        <!-- BLOCCO DESTRO -->
+        <ul class="menu-left">
+            <li class="menu-left-item"><a href="#">SEZIONI</a></li>
+            <li class="menu-left-item"><a href="#">EDIZIONI LOCALI</a></li>
+            <li class="menu-left-item"><a href="#">SERVIZI</a></li>
+        </ul>
         <div class="menu-right">
-            <div class="menu-right-scroll">
-                <div class="menu-right-item">prova1</div>
-                <div class="menu-right-item">prova2</div>
-                <div class="menu-right-item">prova3</div>
-                <div class="menu-right-item">prova4</div>
-                <div class="menu-right-item">prova5</div>
-                <div class="menu-right-item">prova6</div>
-                <div class="menu-right-item">prova7</div>
-            </div>
+            <ul class="menu-right-scroll">
+                <li class="menu-right-item"><a href="#">prova1</a></li>
+                <li class="menu-right-item"><a href="#">prova2</a></li>
+                <li class="menu-right-item"><a href="#">prova3</a></li>
+                <li class="menu-right-item"><a href="#">prova4</a></li>
+                <li class="menu-right-item"><a href="#">prova5</a></li>
+                <li class="menu-right-item"><a href="#">prova6</a></li>
+                <li class="menu-right-item"><a href="#">prova7</a></li>
+            </ul>
         </div>
-
     </div>
-</div>
+</nav>
+
 <!-- IMMAGINE GRANDE -->
 <div class="pagina immagine-area">
     <img src="img/PPMadv.png" alt="pubblicita in alto">
@@ -140,321 +135,296 @@
         <!-- SINISTRA -->
         <div class="col-12 col-md-8 colonna-sinistra">
 
-            <div class="titolo-sezione">
-                primo piano
-                <div class="sottolinea"></div>
-            </div>
-
-            <div class="p-3">
-                <div class="placeholder-grande">
-                    <img src="img/PPMimggrande.png" alt="immagine primo piano">
-                </div>
-
-                <div class="primo-piano-testi mt-3">
-                    <div class="primo-piano-label">PROVA 1</div>
-                    <div class="primo-piano-titolo">Prova 2</div>
-                    <div class="primo-piano-firma">Prova 3</div>
-                </div>
-            </div>
-
-
-            <!-- NUOVO BLOCCO 1: testo + immagine -->
-            <div class="blocco-news-grande p-3 blocco-news-mobile">
-                <div class="row align-items-start g-4">
-                    <div class="col-12 col-md-4 order-2 order-md-1">
-                        <div class="testo-lungo articolo-grande">
-                            <div class="occhiello">Prova 1</div>
-                            <div class="titolo-articolo">Prova 2</div>
-                            <div class="firma-articolo">prova 3</div>
-                        </div>
+            <!--PRIMO PIANO-->
+            <section class="primo-piano">
+                <header class="titolo-sezione">
+                    <h1 class="titolo-sezione-testo">primo piano</h1>
+                    <span class="sottolinea"></span>
+                </header>
+                <article class="p-3">
+                    <figure class="placeholder-grande">
+                        <img src="img/PPMimggrande.png" alt="immagine primo piano">
+                    </figure>
+                    <div class="primo-piano-testi mt-3">
+                        <p class="primo-piano-label">PROVA 1</p>
+                        <h2 class="primo-piano-titolo">Prova 2</h2>
+                        <p class="primo-piano-firma">Prova 3</p>
                     </div>
-
+                </article>
+            </section>
+            <!-- TESTO + IMMAGINE 1 -->
+            <section class="blocco-news-grande p-3 blocco-news-mobile">
+                <article class="row align-items-start g-4">
+                    <div class="col-12 col-md-4 order-2 order-md-1">
+                        <header class="testo-lungo articolo-grande">
+                            <p class="occhiello">Prova 1</p>
+                            <h2 class="titolo-articolo">Prova 2</h2>
+                            <p class="firma-articolo">prova 3</p>
+                        </header>
+                    </div>
                     <div class="col-12 col-md-8 order-1 order-md-2">
-                        <div class="placeholder-news-grande">
+                        <figure class="placeholder-news-grande">
                             <img src="img/PPMimgdx.png" alt="prima immagine scritta a sx">
-                        </div>
+                        </figure>
                     </div>
-                </div>
-            </div>
-
-            <!-- 3 IMMAGINI CON SCRITTA SOTTO -->
-            <div class="p-3 blocco-card">
+                </article>
+            </section>
+            <!-- CARD 1 -->
+            <section class="p-3 blocco-card">
                 <div class="row g-3">
-
-                    <div class="col-12 col-md-4 card-mobile-laterale">
-                        <div class="placeholder-card mb-2">
+                    <article class="col-12 col-md-4 card-mobile-laterale">
+                        <figure class="placeholder-card mb-2">
                             <img src="img/PPMimgpiccola.png" alt="prima immagine piccola">
-                        </div>
-                        <div class="testo-box articolo-card">
-                            <div class="titolo-card"><span>Prova 4</span>prova 5</div>
-                            <div class="firma-articolo">prova 6</div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-4 card-mobile-laterale">
-                        <div class="placeholder-card mb-2">
+                        </figure>
+                        <header class="testo-box articolo-card">
+                            <h3 class="titolo-card"><span>Prova 4</span> prova 5</h3>
+                            <p class="firma-articolo">prova 6</p>
+                        </header>
+                    </article>
+                    <article class="col-12 col-md-4 card-mobile-laterale">
+                        <figure class="placeholder-card mb-2">
                             <img src="img/PPMimgpiccola.png" alt="seconda immagine piccola">
-                        </div>
-                        <div class="testo-box articolo-card">
-                            <div class="titolo-card"><span>Prova 4</span>prova 5</div>
-                            <div class="firma-articolo">prova 6</div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-4 card-mobile-laterale">
-                        <div class="placeholder-card mb-2">
+                        </figure>
+                        <header class="testo-box articolo-card">
+                            <h3 class="titolo-card"><span>Prova 4</span> prova 5</h3>
+                            <p class="firma-articolo">prova 6</p>
+                        </header>
+                    </article>
+                    <article class="col-12 col-md-4 card-mobile-laterale">
+                        <figure class="placeholder-card mb-2">
                             <img src="img/PPMimgpiccola.png" alt="terza immagine piccola">
-                        </div>
-                        <div class="testo-box articolo-card">
-                            <div class="titolo-card"><span>Prova 4</span>prova 5</div>
-                            <div class="firma-articolo">prova 6</div>
-                        </div>
-                    </div>
-
+                        </figure>
+                        <header class="testo-box articolo-card">
+                            <h3 class="titolo-card"><span>Prova 4</span> prova 5</h3>
+                            <p class="firma-articolo">prova 6</p>
+                        </header>
+                    </article>
                 </div>
-            </div>
+            </section>
 
-            <!-- NUOVO BLOCCO 2: testo + immagine -->
-            <div class="blocco-news-grande p-3 blocco-news-mobile">
-                <div class="row align-items-start g-4">
+            <!-- TESTO + IMMAGINE 2 -->
+            <section class="blocco-news-grande p-3 blocco-news-mobile">
+                <article class="row align-items-start g-4">
                     <div class="col-12 col-md-4 order-2 order-md-1">
-                        <div class="testo-lungo articolo-grande">
-                            <div class="occhiello">Prova 1</div>
-                            <div class="titolo-articolo">Prova 2</div>
-                            <div class="firma-articolo">prova 3</div>
-                        </div>
+                        <header class="testo-lungo articolo-grande">
+                            <p class="occhiello">Prova 1</p>
+                            <h2 class="titolo-articolo">Prova 2</h2>
+                            <p class="firma-articolo">prova 3</p>
+                        </header>
                     </div>
-
                     <div class="col-12 col-md-8 order-1 order-md-2">
-                        <div class="placeholder-news-grande">
-                            <img src="img/PPMimgdx.png" alt="seconda immagine scritta a sx">
-
-                        </div>
+                        <figure class="placeholder-news-grande">
+                            <img src="img/PPMimgdx.png" alt="prima immagine scritta a sx">
+                        </figure>
                     </div>
-                </div>
-            </div>
-            <!-- 3 blocchi con immagine e testo sotto -->
-            <div class="p-3 blocco-card">
+                </article>
+            </section>
+            <!-- CARD 2 -->
+            <section class="p-3 blocco-card">
                 <div class="row g-3">
-
-                    <div class="col-12 col-md-4 card-mobile-laterale">
-                        <div class="placeholder-card mb-2">
-                            <img src="img/PPMimgpiccola.png" alt="quarta immagine piccola">
-                        </div>
-                        <div class="testo-box articolo-card">
-                            <div class="titolo-card"><span>Prova 4</span>prova 5</div>
-                            <div class="firma-articolo">prova 6</div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-4 card-mobile-laterale">
-                        <div class="placeholder-card mb-2">
-                            <img src="img/PPMimgpiccola.png" alt="quinta immagine piccola">
-                        </div>
-                        <div class="testo-box articolo-card">
-                            <div class="titolo-card"><span>Prova 4</span>prova 5</div>
-                            <div class="firma-articolo">prova 6</div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-4 card-mobile-laterale">
-                        <div class="placeholder-card mb-2">
-                            <img src="img/PPMimgpiccola.png" alt="sesta immagine piccola">
-                        </div>
-                        <div class="testo-box articolo-card">
-                            <div class="titolo-card"><span>Prova 4</span>prova 5</div>
-                            <div class="firma-articolo">prova 6</div>
-                        </div>
-                    </div>
-
+                    <article class="col-12 col-md-4 card-mobile-laterale">
+                        <figure class="placeholder-card mb-2">
+                            <img src="img/PPMimgpiccola.png" alt="prima immagine piccola">
+                        </figure>
+                        <header class="testo-box articolo-card">
+                            <h3 class="titolo-card"><span>Prova 4</span> prova 5</h3>
+                            <p class="firma-articolo">prova 6</p>
+                        </header>
+                    </article>
+                    <article class="col-12 col-md-4 card-mobile-laterale">
+                        <figure class="placeholder-card mb-2">
+                            <img src="img/PPMimgpiccola.png" alt="seconda immagine piccola">
+                        </figure>
+                        <header class="testo-box articolo-card">
+                            <h3 class="titolo-card"><span>Prova 4</span> prova 5</h3>
+                            <p class="firma-articolo">prova 6</p>
+                        </header>
+                    </article>
+                    <article class="col-12 col-md-4 card-mobile-laterale">
+                        <figure class="placeholder-card mb-2">
+                            <img src="img/PPMimgpiccola.png" alt="terza immagine piccola">
+                        </figure>
+                        <header class="testo-box articolo-card">
+                            <h3 class="titolo-card"><span>Prova 4</span> prova 5</h3>
+                            <p class="firma-articolo">prova 6</p>
+                        </header>
+                    </article>
                 </div>
-            </div>
+            </section>
 
-            <!-- blocco finale con testo sopra e immagine grande sotto -->
-            <div class="blocco-news-grande p-3 blocco-news-mobile">
-                <div class="row align-items-start g-4">
-                    <div class="col-12 col-md-4">
-                        <div class="testo-lungo articolo-grande">
-                            <div class="occhiello">Prova 1</div>
-                            <div class="titolo-articolo">Prova 2</div>
-                            <div class="firma-articolo">prova 3</div>
-                        </div>
+            <!-- TESTO + IMMAGINE 2 -->
+            <section class="blocco-news-grande p-3 blocco-news-mobile">
+                <article class="row align-items-start g-4">
+                    <div class="col-12 col-md-4 order-2 order-md-1">
+                        <header class="testo-lungo articolo-grande">
+                            <p class="occhiello">Prova 1</p>
+                            <h2 class="titolo-articolo">Prova 2</h2>
+                            <p class="firma-articolo">prova 3</p>
+                        </header>
                     </div>
-
-                    <div class="col-12 col-md-8">
-                        <div class="placeholder-news-grande">
-                            <img src="img/PPMimgdx.png" alt="terza immagine scritta a sx">
-                        </div>
+                    <div class="col-12 col-md-8 order-1 order-md-2">
+                        <figure class="placeholder-news-grande">
+                            <img src="img/PPMimgdx.png" alt="prima immagine scritta a sx">
+                        </figure>
                     </div>
-                </div>
-            </div>
-            <!--immagine grande-->
-            <div class="p-3 blocco-card">
-
-                <div class="placeholder-grande mb-3">
+                </article>
+            </section>
+            <!-- IMMAGINE GRANDE -->
+            <article class="p-3 blocco-card">
+                <figure class="placeholder-grande mb-3">
                     <img src="img/PPMimggrande.png" alt="immagine grande finale">
-                </div>
-
-                <div class="text-center">
-                    <div class="primo-piano-label">PROVA 1</div>
-                    <div class="primo-piano-titolo">Prova 2</div>
-                    <div class="primo-piano-firma">Prova 3</div>
-                </div>
-
-            </div>
+                </figure>
+                <header class="text-center">
+                    <p class="primo-piano-label">PROVA 1</p>
+                    <h2 class="primo-piano-titolo">Prova 2</h2>
+                    <p class="primo-piano-firma">Prova 3</p>
+                </header>
+            </article>
         </div>
 
-        <!-- DESTRA (STICKY) -->
-        <div class="col-12 col-md-4 colonna-destra">
-            <div class="blocco-sticky p-3">
-
-                <div class="titolo-sezione">
-                    video del giorno
-                    <div class="sottolinea"></div>
-                </div>
-
-                <div class="video-giorno-box">
-                    <div class="placeholder-video">
+        <!-- DESTRA -->
+        <aside class="col-12 col-md-4 colonna-destra">
+            <section class="blocco-sticky p-3">
+                <header class="titolo-sezione">
+                    <h2 class="titolo-sezione-testo">video del giorno</h2>
+                    <span class="sottolinea" aria-hidden="true"></span>
+                </header>
+                <article class="video-giorno-box">
+                    <figure class="placeholder-video">
                         <img src="img/PPMcoldx.png" alt="prima immagine del giorno">
-                    </div>
-                    <div class="testo-video-sopra">prova testo video</div>
-                </div>
-                <div class="mt-4">
-
-                    <div class="overlay-box">
-                        <div class="video-giorno-box">
-                            <div class="placeholder-video">
-                                <img src="img/PPMcoldx.png" alt="prima immagine del giorno">
-                            </div>
-                            <div class="testo-video-sopra">prova testo video</div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+                    </figure>
+                    <h3 class="testo-video-sopra">prova testo video</h3>
+                </article>
+                <section class="mt-4 overlay-box">
+                    <article class="video-giorno-box">
+                        <figure class="placeholder-video">
+                            <img src="img/PPMcoldx.png" alt="seconda immagine del giorno">
+                        </figure>
+                        <h3 class="testo-video-sopra">prova testo video</h3>
+                    </article>
+                </section>
+            </section>
+        </aside>
 
     </div>
 
-    <!-- NEWSLETTER -->
-    <div class="newsletter-sezione p-4">
-        <div class="titolo-sezione">
-            Le newsletter
-            <div class="sottolinea"></div>
-        </div>
-
+    <!--NEWSLETTER-->
+    <section class="newsletter-sezione p-4">
+        <header class="titolo-sezione">
+            <h2 class="titolo-sezione-testo">Le newsletter</h2>
+            <span class="sottolinea" aria-hidden="true"></span>
+        </header>
         <div class="row g-4 mt-2">
-            <div class="col-12 col-md-4">
+            <article class="col-12 col-md-4">
                 <div class="newsletter-box">
-                    <div class="newsletter-icona"><i class="bi bi-envelope"></i></div>
+                    <div class="newsletter-icona" aria-hidden="true">
+                        <i class="bi bi-envelope"></i>
+                    </div>
                     <div class="newsletter-contenuto">
-                        <div class="newsletter-titolo">prova titolo 1</div>
-                        <div class="newsletter-linea"></div>
-                        <div class="newsletter-autore">prova autore 1</div>
-                        <div class="newsletter-testo">prova testo 1</div>
+                        <h3 class="newsletter-titolo">prova titolo 1</h3>
+                        <span class="newsletter-linea" aria-hidden="true"></span>
+                        <p class="newsletter-autore">prova autore 1</p>
+                        <p class="newsletter-testo">prova testo 1</p>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-12 col-md-4">
+            </article>
+            <article class="col-12 col-md-4">
                 <div class="newsletter-box">
-                    <div class="newsletter-icona"><i class="bi bi-envelope"></i></div>
+                    <div class="newsletter-icona" aria-hidden="true">
+                        <i class="bi bi-envelope"></i>
+                    </div>
                     <div class="newsletter-contenuto">
-                        <div class="newsletter-titolo">prova titolo 2</div>
-                        <div class="newsletter-linea"></div>
-                        <div class="newsletter-autore">prova autore 2</div>
-                        <div class="newsletter-testo">prova testo 2</div>
+                        <h3 class="newsletter-titolo">prova titolo 2</h3>
+                        <span class="newsletter-linea" aria-hidden="true"></span>
+                        <p class="newsletter-autore">prova autore 2</p>
+                        <p class="newsletter-testo">prova testo 2</p>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-12 col-md-4">
+            </article>
+            <article class="col-12 col-md-4">
                 <div class="newsletter-box">
-                    <div class="newsletter-icona"><i class="bi bi-envelope"></i></div>
+                    <div class="newsletter-icona" aria-hidden="true">
+                        <i class="bi bi-envelope"></i>
+                    </div>
                     <div class="newsletter-contenuto">
-                        <div class="newsletter-titolo">prova titolo 3</div>
-                        <div class="newsletter-linea"></div>
-                        <div class="newsletter-autore">prova autore 3</div>
-                        <div class="newsletter-testo">prova testo 3</div>
+                        <h3 class="newsletter-titolo">prova titolo 3</h3>
+                        <span class="newsletter-linea" aria-hidden="true"></span>
+                        <p class="newsletter-autore">prova autore 3</p>
+                        <p class="newsletter-testo">prova testo 3</p>
                     </div>
                 </div>
-            </div>
+            </article>
         </div>
-
         <div class="row g-4">
-            <div class="col-12 col-md-4">
+            <article class="col-12 col-md-4">
                 <div class="newsletter-box">
-                    <div class="newsletter-icona"><i class="bi bi-envelope"></i></div>
+                    <div class="newsletter-icona" aria-hidden="true">
+                        <i class="bi bi-envelope"></i>
+                    </div>
                     <div class="newsletter-contenuto">
-                        <div class="newsletter-titolo">prova titolo 4</div>
-                        <div class="newsletter-linea"></div>
-                        <div class="newsletter-autore">prova autore 4</div>
-                        <div class="newsletter-testo">prova testo 4</div>
+                        <h3 class="newsletter-titolo">prova titolo 4</h3>
+                        <span class="newsletter-linea" aria-hidden="true"></span>
+                        <p class="newsletter-autore">prova autore 4</p>
+                        <p class="newsletter-testo">prova testo 4</p>
                     </div>
                 </div>
-            </div>
+            </article>
         </div>
-    </div>
-    <!-- BLOCCO VIDEO -->
-    <div class="sezione-video-home p-4">
+    </section>
 
-        <div class="titolo-sezione titolo-su-scuro">
-            Video
-            <div class="sottolinea"></div>
-        </div>
-
+    <!--VIDEO-->
+    <section class="sezione-video-home p-4">
+        <header class="titolo-sezione titolo-su-scuro">
+            <h2 class="titolo-sezione-testo">Video</h2>
+            <span class="sottolinea" aria-hidden="true"></span>
+        </header>
         <div class="video-scroll mt-4">
-
-            <div class="video-item">
+            <article class="video-item">
                 <div class="video-card">
-                    <div class="video-img">
+                    <figure class="video-img">
                         <img src="img/PPMvideo.png" alt="primo video">
-                    </div>
+                    </figure>
                     <div class="video-testo mt-2">
-                        <div class="video-label">PROVA 1</div>
-                        <div class="video-titolo">Prova testo</div>
+                        <p class="video-label">PROVA 1</p>
+                        <h3 class="video-titolo">Prova testo</h3>
                     </div>
                 </div>
-            </div>
-
-            <div class="video-item">
+            </article>
+            <article class="video-item">
                 <div class="video-card">
-                    <div class="video-img">
+                    <figure class="video-img">
                         <img src="img/PPMvideo.png" alt="secondo video">
-                    </div>
+                    </figure>
                     <div class="video-testo mt-2">
-                        <div class="video-label">PROVA 2</div>
-                        <div class="video-titolo">Prova testo</div>
+                        <p class="video-label">PROVA 2</p>
+                        <h3 class="video-titolo">Prova testo</h3>
                     </div>
                 </div>
-            </div>
-
-            <div class="video-item">
+            </article>
+            <article class="video-item">
                 <div class="video-card">
-                    <div class="video-img">
+                    <figure class="video-img">
                         <img src="img/PPMvideo.png" alt="terzo video">
-                    </div>
+                    </figure>
                     <div class="video-testo mt-2">
-                        <div class="video-label">PROVA 3</div>
-                        <div class="video-titolo">Prova testo</div>
+                        <p class="video-label">PROVA 3</p>
+                        <h3 class="video-titolo">Prova testo</h3>
                     </div>
                 </div>
-            </div>
-
-            <div class="video-item">
+            </article>
+            <article class="video-item">
                 <div class="video-card">
-                    <div class="video-img">
+                    <figure class="video-img">
                         <img src="img/PPMvideo.png" alt="quarto video">
-                    </div>
+                    </figure>
                     <div class="video-testo mt-2">
-                        <div class="video-label">PROVA 4</div>
-                        <div class="video-titolo">Prova testo</div>
+                        <p class="video-label">PROVA 4</p>
+                        <h3 class="video-titolo">Prova testo</h3>
                     </div>
                 </div>
-            </div>
-
+            </article>
         </div>
-    </div>
+    </section>
 
     <!-- BLOCCO ECONOMIA -->
     <div class="sezione-economia p-4">
@@ -518,164 +488,126 @@
 
         </div>
     </div>
-    <!-- BLOCCO METEO / GIOCHI / DIZIONARIO -->
-    <div class="sezione-servizi p-4">
-
+    <!-- BLOCCO METEO / GIOCHI -->
+    <section class="sezione-servizi p-4">
         <div class="row g-0 blocco-servizi-superiore">
-
-            <!-- COLONNA 1: METEO -->
-            <div class="col-12 col-md-4 servizio-colonna servizio-colonna-meteo">
-                <div class="meteo-header-mobile">
-                    <div class="servizio-titolo mb-3">METEO</div>
-                    <div class="servizio-bottone servizio-bottone-mobile">TUTTE LE PREVISIONI</div>
-                </div>
-
-                <div class="servizio-box-grande">
-                    <div class="servizio-box-grande">
-                        <img src="img/PPMmeteo.png" alt="immagine meteo">
-                    </div>
-                </div>
-            </div>
-
-            <!-- COLONNA 2: PREVISIONI -->
-            <div class="col-12 col-md-2 servizio-colonna servizio-colonna-previsioni">
-                <div class="servizio-bottone mb-3 servizio-bottone-desktop">TUTTE LE PREVISIONI</div>
-
+            <section class="col-12 col-md-4 servizio-colonna servizio-colonna-meteo">
+                <header class="meteo-header-mobile">
+                    <h2 class="servizio-titolo mb-3">METEO</h2>
+                    <a href="#" class="servizio-bottone servizio-bottone-mobile">TUTTE LE PREVISIONI</a>
+                </header>
+                <figure class="servizio-box-grande">
+                    <img src="img/PPMmeteo.png" alt="immagine meteo">
+                </figure>
+            </section>
+            <section class="col-12 col-md-2 servizio-colonna servizio-colonna-previsioni">
+                <a href="#" class="servizio-bottone mb-3 servizio-bottone-desktop">TUTTE LE PREVISIONI</a>
                 <div class="icona-testo mb-3">
-                    <div class="mini-icona">icona</div>
-                    <div>Giorno</div>
+                    <span class="mini-icona">icona</span>
+                    <span>Giorno</span>
                 </div>
-
                 <div class="icona-testo mb-3">
-                    <div class="mini-icona">icona</div>
-                    <div>Sera</div>
+                    <span class="mini-icona">icona</span>
+                    <span>Sera</span>
                 </div>
-
                 <div class="icona-testo">
-                    <div class="mini-icona">icona</div>
-                    <div>Notte</div>
+                    <span class="mini-icona">icona</span>
+                    <span>Notte</span>
                 </div>
-            </div>
-
-            <!-- COLONNA 3: GIOCO 1 -->
-            <div class="col-12 col-md-3 servizio-colonna servizio-colonna-gioco">
-                <div class="servizio-titolo mb-3">GIOCHI</div>
-                <div class="text-center gioco-testo-mobile">Sudoku</div>
-                <div class="servizio-box-piccolo mb-2">
+            </section>
+            <article class="col-12 col-md-3 servizio-colonna servizio-colonna-gioco">
+                <h2 class="servizio-titolo mb-3">GIOCHI</h2>
+                <p class="text-center gioco-testo-mobile">Sudoku</p>
+                <figure class="servizio-box-piccolo mb-2">
                     <img src="img/PPMgiochi.png" alt="immagine sudoku">
-                </div>
-                <div class="text-center gioco-testo-desktop">Sudoku</div>
-            </div>
-
-            <!-- COLONNA 4: GIOCO 2 -->
-            <div class="col-12 col-md-3 servizio-colonna servizio-colonna-gioco">
-                <div class="servizio-titolo mb-3 invisible titolo-placeholder-desktop">GIOCHI</div>
-                <div class="text-center gioco-testo-mobile">Cruciverba</div>
-                <div class="servizio-box-piccolo mb-2">
+                </figure>
+                <p class="text-center gioco-testo-desktop">Sudoku</p>
+            </article>
+            <article class="col-12 col-md-3 servizio-colonna servizio-colonna-gioco">
+                <h2 class="servizio-titolo mb-3 invisible titolo-placeholder-desktop">GIOCHI</h2>
+                <p class="text-center gioco-testo-mobile">Cruciverba</p>
+                <figure class="servizio-box-piccolo mb-2">
                     <img src="img/PPMgiochi.png" alt="immagine cruciverba">
-                </div>
-                <div class="text-center gioco-testo-desktop">Cruciverba</div>
-            </div>
-
+                </figure>
+                <p class="text-center gioco-testo-desktop">Cruciverba</p>
+            </article>
         </div>
 
-
-        <!-- PARTE SOTTO DEL PRIMO BLOCCO -->
-        <div class="blocco-oroscopo mt-4 pt-4">
-            <div class="servizio-titolo mb-3">OROSCOPO</div>
-
+        <!-- OROSCOPO -->
+        <section class="blocco-oroscopo mt-4 pt-4">
+            <h2 class="servizio-titolo mb-3">OROSCOPO</h2>
             <div class="oroscopo-scroll text-center">
-                <div class="oroscopo-item">
-                    <div class="oroscopo-icona">icona</div>
-                    <div>Ariete</div>
-                </div>
-
-                <div class="oroscopo-item">
-                    <div class="oroscopo-icona">icona</div>
-                    <div>Toro</div>
-                </div>
-
-                <div class="oroscopo-item">
-                    <div class="oroscopo-icona">icona</div>
-                    <div>Gemelli</div>
-                </div>
-
-                <div class="oroscopo-item">
-                    <div class="oroscopo-icona">icona</div>
-                    <div>Cancro</div>
-                </div>
-
-                <div class="oroscopo-item">
-                    <div class="oroscopo-icona">icona</div>
-                    <div>Leone</div>
-                </div>
-
-                <div class="oroscopo-item">
-                    <div class="oroscopo-icona">icona</div>
-                    <div>Vergine</div>
-                </div>
-
-                <div class="oroscopo-item">
-                    <div class="oroscopo-icona">icona</div>
-                    <div>Bilancia</div>
-                </div>
-
-                <div class="oroscopo-item">
-                    <div class="oroscopo-icona">icona</div>
-                    <div>Scorpione</div>
-                </div>
-
-                <div class="oroscopo-item">
-                    <div class="oroscopo-icona">icona</div>
-                    <div>Sagittario</div>
-                </div>
-
-                <div class="oroscopo-item">
-                    <div class="oroscopo-icona">icona</div>
-                    <div>Capricorno</div>
-                </div>
-
-                <div class="oroscopo-item">
-                    <div class="oroscopo-icona">icona</div>
-                    <div>Acquario</div>
-                </div>
-
-                <div class="oroscopo-item">
-                    <div class="oroscopo-icona">icona</div>
-                    <div>Pesci</div>
-                </div>
+                <article class="oroscopo-item">
+                    <span class="oroscopo-icona">icona</span>
+                    <p>Ariete</p>
+                </article>
+                <article class="oroscopo-item">
+                    <span class="oroscopo-icona">icona</span>
+                    <p>Toro</p>
+                </article>
+                <article class="oroscopo-item">
+                    <span class="oroscopo-icona">icona</span>
+                    <p>Gemelli</p>
+                </article>
+                <article class="oroscopo-item">
+                    <span class="oroscopo-icona">icona</span>
+                    <p>Cancro</p>
+                </article>
+                <article class="oroscopo-item">
+                    <span class="oroscopo-icona">icona</span>
+                    <p>Leone</p>
+                </article>
+                <article class="oroscopo-item">
+                    <span class="oroscopo-icona">icona</span>
+                    <p>Vergine</p>
+                </article>
+                <article class="oroscopo-item">
+                    <span class="oroscopo-icona">icona</span>
+                    <p>Bilancia</p>
+                </article>
+                <article class="oroscopo-item">
+                    <span class="oroscopo-icona">icona</span>
+                    <p>Scorpione</p>
+                </article>
+                <article class="oroscopo-item">
+                    <span class="oroscopo-icona">icona</span>
+                    <p>Sagittario</p>
+                </article>
+                <article class="oroscopo-item">
+                    <span class="oroscopo-icona">icona</span>
+                    <p>Capricorno</p>
+                </article>
+                <article class="oroscopo-item">
+                    <span class="oroscopo-icona">icona</span>
+                    <p>Acquario</p>
+                </article>
+                <article class="oroscopo-item">
+                    <span class="oroscopo-icona">icona</span>
+                    <p>Pesci</p>
+                </article>
             </div>
-        </div>
+        </section>
+    </section>
 
-    </div>
-    <!-- FOOTER GRANDE BIANCO -->
-    <div class="footer-principale">
+    <!-- FOOTER -->
+    <footer class="footer-principale">
         <div class="footer-contenitore">
-
             <div class="row g-0">
-
-                <!-- COLONNA SINISTRA -->
-                <div class="col-12 col-md-auto footer-colonna-sinistra">
-                    <div class="footer-logo">La Repvbblica</div>
-
-                    <div class="footer-testo-piccolo">LOREM IPSUM</div>
-                    <div class="footer-testo-piccolo">P.iva 123456789</div>
-                    <div class="footer-testo-piccolo">1234567891234567</div>
-
-                    <div class="footer-linea"></div>
-
-                    <button class="footer-bottone">Abbonati</button>
-
-                    <div class="footer-linea"></div>
-
+                <section class="col-12 col-md-auto footer-colonna-sinistra">
+                    <h2 class="footer-logo">La Repvbblica</h2>
+                    <p class="footer-testo-piccolo">LOREM IPSUM</p>
+                    <p class="footer-testo-piccolo">P.iva 123456789</p>
+                    <p class="footer-testo-piccolo">1234567891234567</p>
+                    <hr class="footer-linea">
+                    <button class="footer-bottone" type="button">Abbonati</button>
+                    <hr class="footer-linea">
                     <div class="footer-app-social">
-                        <div class="footer-app">
-                            <div class="footer-titolo-mini">APP</div>
-                            <div class="footer-link-riga">Iphone |<wbr> Android</div>
-                        </div>
-
-                        <div class="footer-social-blocco">
-                            <div class="footer-titolo-mini">SOCIAL</div>
+                        <section class="footer-app">
+                            <h3 class="footer-titolo-mini">APP</h3>
+                            <p class="footer-link-riga">Iphone |<wbr> Android</p>
+                        </section>
+                        <section class="footer-social-blocco">
+                            <h3 class="footer-titolo-mini">SOCIAL</h3>
                             <div class="footer-social">
                                 <span>icona</span>
                                 <span>icona</span>
@@ -683,131 +615,112 @@
                                 <span>icona</span>
                                 <span>icona</span>
                             </div>
-                        </div>
+                        </section>
                     </div>
-                </div>
-
-                <!-- COLONNA DESTRA -->
-                <div class="col-12 col-md footer-colonna-destra">
-
-                    <div class="footer-sezione-top">
-                        <div class="footer-titolo-sezione">SUPPLEMENTI SITO</div>
-                        <div class="footer-links-orizzontali">
-                            <span>Al contrario</span>
-                            <span>di</span>
-                            <span>quanto </span>
-                            <span>si pensi</span>
-                        </div>
-                    </div>
-
-                    <div class="footer-linea-larga"></div>
-
+                </section>
+                <section class="col-12 col-md footer-colonna-destra">
+                    <section class="footer-sezione-top">
+                        <h3 class="footer-titolo-sezione">SUPPLEMENTI SITO</h3>
+                        <nav class="footer-links-orizzontali">
+                            <a href="#">Al contrario</a>
+                            <a href="#">di</a>
+                            <a href="#">quanto</a>
+                            <a href="#">si pensi</a>
+                        </nav>
+                    </section>
+                    <hr class="footer-linea-larga">
                     <div class="row g-4">
-
-                        <div class="col-12 col-md-4">
-                            <div class="footer-titolo-sezione">NEWS NETWORK</div>
-                            <div class="footer-lista">
-                                <div>Lorem </div>
-                                <div>Ipsum è un testo</div>
-                                <div>segnaposto </div>
-                                <div>utilizzato nel settore</div>
-                                <div>della tipografia</div>
-                            </div>
-
-                            <div class="footer-titolo-sezione mt-4">PERIODICI</div>
-                            <div class="footer-lista">
-                                <div>Esistono </div>
-                                <div>innumerevoli </div>
-                                <div>variazioni dei passaggi</div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-4">
-                            <div class="footer-titolo-sezione">RADIO E PODCAST</div>
-                            <div class="footer-lista">
-                                <div>Al contrario</div>
-                                <div>di quanto</div>
-                                <div>si pensi</div>
-                                <div>Lorem Ipsum</div>
-                            </div>
-
-                            <div class="footer-titolo-sezione mt-4">INIZIATIVE EDITORIALI</div>
-                            <div class="footer-lista">
-                                <div>Lorem Ipsum</div>
-                            </div>
-
-                            <div class="footer-titolo-sezione mt-4">PARTNERSHIP</div>
-                            <div class="footer-lista">
-                                <div>Esistono </div>
-                                <div>innumerevoli </div>
-                                <div>variazioni </div>
-                                <div>dei passaggi del</div>
-                                <div>Lorem Ipsum</div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-4">
-                            <div class="footer-titolo-sezione">SERVIZI, TV E CONSUMI</div>
-                            <div class="footer-lista">
-                                <div>Lorem</div>
-                                <div>Ipsum </div>
-                                <div>è un testo segnaposto</div>
-                                <div>utilizzato </div>
-                                <div>nel settore</div>
-                                <div>della tipografia </div>
-                                <div>e della stampa</div>
-                                <div> Lorem Ipsum</div>
-                                <div>è considerato</div>
-                            </div>
-                        </div>
-
+                        <section class="col-12 col-md-4">
+                            <h3 class="footer-titolo-sezione">NEWS NETWORK</h3>
+                            <nav class="footer-lista">
+                                <a href="#">Lorem</a>
+                                <a href="#">Ipsum è un testo</a>
+                                <a href="#">segnaposto</a>
+                                <a href="#">utilizzato nel settore</a>
+                                <a href="#">della tipografia</a>
+                            </nav>
+                            <h3 class="footer-titolo-sezione mt-4">PERIODICI</h3>
+                            <nav class="footer-lista">
+                                <a href="#">Esistono</a>
+                                <a href="#">innumerevoli</a>
+                                <a href="#">variazioni dei passaggi</a>
+                            </nav>
+                        </section>
+                        <section class="col-12 col-md-4">
+                            <h3 class="footer-titolo-sezione">RADIO E PODCAST</h3>
+                            <nav class="footer-lista">
+                                <a href="#">Al contrario</a>
+                                <a href="#">di quanto</a>
+                                <a href="#">si pensi</a>
+                                <a href="#">Lorem Ipsum</a>
+                            </nav>
+                            <h3 class="footer-titolo-sezione mt-4">INIZIATIVE EDITORIALI</h3>
+                            <nav class="footer-lista">
+                                <a href="#">Lorem Ipsum</a>
+                            </nav>
+                            <h3 class="footer-titolo-sezione mt-4">PARTNERSHIP</h3>
+                            <nav class="footer-lista">
+                                <a href="#">Esistono</a>
+                                <a href="#">innumerevoli</a>
+                                <a href="#">variazioni</a>
+                                <a href="#">dei passaggi del</a>
+                                <a href="#">Lorem Ipsum</a>
+                            </nav>
+                        </section>
+                        <section class="col-12 col-md-4">
+                            <h3 class="footer-titolo-sezione">SERVIZI, TV E CONSUMI</h3>
+                            <nav class="footer-lista">
+                                <a href="#">Lorem</a>
+                                <a href="#">Ipsum</a>
+                                <a href="#">è un testo segnaposto</a>
+                                <a href="#">utilizzato</a>
+                                <a href="#">nel settore</a>
+                                <a href="#">della tipografia</a>
+                                <a href="#">e della stampa</a>
+                                <a href="#">Lorem Ipsum</a>
+                                <a href="#">è considerato</a>
+                            </nav>
+                        </section>
                     </div>
-
-                    <div class="footer-linea-larga mt-4"></div>
-
-                    <div class="footer-network-lena">
-                        <div class="footer-titolo-sezione">NETWORK</div>
-                        <div class="footer-links-orizzontali mt-2">
-                            <span>Al contrario</span>
-                            <span>di quanto</span>
-                            <span>si pensi, Lorem</span>
-                            <span>Ipsum non</span>
-                            <span>è semplicemente</span>
-                            <span>una sequenza</span>
-                            <span>casuale di caratteri</span>
-                        </div>
-                    </div>
-
-                </div>
-
+                    <hr class="footer-linea-larga mt-4">
+                    <section class="footer-network-lena">
+                        <h3 class="footer-titolo-sezione">NETWORK</h3>
+                        <nav class="footer-links-orizzontali mt-2">
+                            <a href="#">Al contrario</a>
+                            <a href="#">di quanto</a>
+                            <a href="#">si pensi, Lorem</a>
+                            <a href="#">Ipsum non</a>
+                            <a href="#">è semplicemente</a>
+                            <a href="#">una sequenza</a>
+                            <a href="#">casuale di caratteri</a>
+                        </nav>
+                    </section>
+                </section>
             </div>
-
         </div>
-    </div>
+    </footer>
 
     <!-- FOOTER GRIGIO FINALE -->
-    <div class="footer-finale">
+    <footer class="footer-finale">
         <div class="footer-finale-contenitore">
-
-            <div class="footer-finale-links">
-                <span>Lorem Ipsum</span>
-                <span>è un testo</span>
-                <span>segnaposto</span>
-                <span>utilizzato nel settore</span>
-                <span>della tipografia</span>
-                <span>e della</span>
-                <span>stampa</span>
-                <span>Lorem </span>
-                <span>Ipsum è</span>
-                <span>considerato il testo segnaposto</span>
-                <span>standard sin dal sedicesimo</span>
-            </div>
-
-            <div class="footer-finale-copyright">
+            <nav class="footer-finale-links">
+                <a href="#">Lorem Ipsum</a>
+                <a href="#">è un testo</a>
+                <a href="#">segnaposto</a>
+                <a href="#">utilizzato nel settore</a>
+                <a href="#">della tipografia</a>
+                <a href="#">e della</a>
+                <a href="#">stampa</a>
+                <a href="#">Lorem</a>
+                <a href="#">Ipsum è</a>
+                <a href="#">considerato il testo segnaposto</a>
+                <a href="#">standard sin dal sedicesimo</a>
+            </nav>
+            <p class="footer-finale-copyright">
                 Copyright 123456789. Tutti i diritti sono riservati
-            </div>
+            </p>
         </div>
-</div>
+    </footer>
 </div>
 <script src="/js/Homepagejs.js"></script>
 </body>

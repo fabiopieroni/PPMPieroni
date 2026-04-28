@@ -23,14 +23,14 @@
     <nav class="d-flex justify-content-between align-items-center w-100" aria-label="Navigazione principale">
         <ul class="d-flex gap-4 flex-wrap topbar-left">
             <li>
-                <button class="topbar-item" type="button">
+                <button class="topbar-item js-open-menu" type="button" aria-controls="site-menu" aria-expanded="false">
                     <i class="bi bi-list" aria-hidden="true"></i>
                     <span>Menu</span>
                 </button>
             </li>
             <li>
-                <button class="topbar-item" type="button">
-                    <i class="bi bi-search" aria-hidden="true"></i>
+                <button class="topbar-item js-open-search" type="button">
+                    <i class="bi bi-search"></i>
                     <span>Cerca</span>
                 </button>
             </li>
@@ -50,6 +50,24 @@
     </nav>
 </header>
 
+<!-- BARRA DI RICERCA -->
+<div class="pagina search-bar">
+    <div class="pagina">
+        <form class="search-box" role="search">
+            <label for="main-search" class="visually-hidden">
+                Cerca articoli o argomenti
+            </label>
+            <input id="main-search" type="search" placeholder="Cerca articoli o argomenti" autocomplete="off">
+            <button class="search-submit" type="submit" aria-label="Cerca">
+                <i class="bi bi-search"></i>
+            </button>
+            <button class="search-close js-close-search" type="button" aria-label="Chiudi ricerca">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </form>
+    </div>
+</div>
+
 <!--TOPBAR MOBILE/TABLET-->
 <header class="topbar-mobile-wrap" aria-label="Barra superiore mobile">
     <div class="pagina pagina-mobile-topbar">
@@ -61,7 +79,7 @@
             <a href="#" class="topbar-abbonati">ABBONATI</a>
         </div>
         <nav class="topbar-riga2" aria-label="Navigazione mobile">
-            <button class="topbar-menu" type="button">
+            <button class="topbar-menu js-open-menu" type="button" aria-controls="site-menu" aria-expanded="false">
                 <i class="bi bi-list" aria-hidden="true"></i>
                 <span class="label-mobile-hide">Menu</span>
             </button>
@@ -75,6 +93,59 @@
         </nav>
     </div>
 </header>
+
+<!-- TENDINA MENU -->
+<div class="menu-overlay js-menu-overlay"></div>
+<aside class="site-menu" id="site-menu" aria-hidden="true">
+    <div class="site-menu-header">
+        <a href="#" class="site-menu-logo" aria-label="Homepage">
+            <img src="img/PPMlogoalto.png" alt="Logo PPM">
+        </a>
+        <form class="site-menu-search">
+            <input type="search" placeholder="Ricerca su Repubblica" aria-label="Ricerca">
+            <button type="submit" aria-label="Cerca">
+                <i class="bi bi-search" aria-hidden="true"></i>
+            </button>
+        </form>
+        <button class="site-menu-close js-close-menu" type="button" aria-label="Chiudi menu">
+            <i class="bi bi-x-lg" aria-hidden="true"></i>
+        </button>
+    </div>
+    <div class="site-menu-content">
+        <nav class="site-menu-nav" aria-label="Menu principale">
+            <a href="#" class="site-menu-big-link">ABBONATI</a>
+            <a href="#" class="site-menu-big-link">SCARICA L'APP</a>
+            <a href="#" class="site-menu-big-link">SFOGLIA IL QUOTIDIANO</a>
+            <section class="site-menu-section">
+                <h3>IN EVIDENZA</h3>
+                <div class="site-menu-grid">
+                    <a href="#">Newsletter</a>
+                    <a href="#">Giochi</a>
+                    <a href="#">Repubblica 50</a>
+                </div>
+            </section>
+            <section class="site-menu-section">
+                <h3>SEZIONI</h3>
+                <div class="site-menu-grid">
+                    <a href="#">Politica</a>
+                    <a href="#">Economia</a>
+                    <a href="#">Esteri</a>
+                    <a href="#">Cronaca</a>
+                    <a href="#">Commenti</a>
+                    <a href="#">Scuola</a>
+                    <a href="#">Cultura</a>
+                    <a href="#">Sport</a>
+                    <a href="#">Spettacoli</a>
+                    <a href="#">Serie TV</a>
+                </div>
+            </section>
+        </nav>
+    </div>
+    <div class="site-menu-bottom">
+        <a href="#">Redazione</a>
+        <a href="#">Scriveteci</a>
+    </div>
+</aside>
 
 <!-- BLOCCO BLU -->
 <div class="header-mobile-stack">

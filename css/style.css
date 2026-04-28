@@ -135,6 +135,209 @@ body {
   width: 100%;
   display: block;
 }
+/*MENU A TENDINA*/
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.72);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 10000;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+.site-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  max-width: 768px;
+  min-width: 0;
+  height: 100dvh;
+  background: #fff;
+  z-index: 10001;
+  transform: translateX(-100%);
+  transition: transform 0.28s ease;
+  border-right: 1px solid #111;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+body.menu-open {
+  overflow: hidden;
+}
+body.menu-open .menu-overlay {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+body.menu-open .site-menu {
+  transform: translateX(0);
+}
+.site-menu-header {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   min-height: 100px;
+   padding: 20px 24px;
+   border-bottom: 2px solid #111;
+ }
+.site-menu-logo img {
+  width: 62px;
+  height: auto;
+  display: block;
+}
+.site-menu-search {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 42px;
+  width: clamp(150px, 35vw, 200px);
+  border: 2px solid #111;
+  display: flex;
+  align-items: center;
+}
+.site-menu-search input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  padding: 0 16px;
+  font: inherit;
+  font-size: 22px;
+}
+.site-menu-search input::placeholder {
+  color: #666;
+}
+.site-menu-search button,
+.site-menu-close {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  color: #000;
+}
+.site-menu-search button {
+  width: 52px;
+  font-size: 30px;
+}
+.site-menu-close {
+  font-size: 30px;
+}
+.site-menu-big-link {
+  display: block;
+  padding: 12px 16px;
+  border-bottom: 2px solid #111;
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.site-menu-section {
+  border-bottom: 2px solid #111;
+}
+.site-menu-section h3 {
+  margin: 0;
+  padding: 14px 18px;
+  border-bottom: 1px solid #cfcfcf;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+.site-menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.site-menu-grid a {
+  padding: 8px 18px;
+  border-bottom: 1px solid #cfcfcf;
+  color: #444;
+  text-decoration: none;
+  font-size: 18px;
+}
+.site-menu-content {
+  flex: 1;
+  overflow-y: auto;
+}
+.site-menu-bottom {
+  flex-shrink: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 2px solid #111;
+  background: #fff;
+  z-index: 3;
+}
+.site-menu-bottom a {
+  padding: 12px 16px;
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+.site-menu-bottom a + a {
+  border-left: 2px solid #111;
+}
+
+/*BARRA DI RICERCA*/
+.search-bar {
+  display: none;
+  width: 100%;
+  padding: 10px 0;
+  background: #fff;
+}
+body.search-open .search-bar {
+  display: block;
+}
+.search-bar .pagina {
+  padding: 0 16px;
+}
+.search-box {
+  position: relative;
+  background: #fff;
+  border: 1px solid #d4d7dc;
+}
+.search-box input {
+  width: 100%;
+  height: 48px;
+  border: 0;
+  outline: none;
+  padding: 0 96px 0 16px;
+  font-size: 18px;
+}
+.search-submit,
+.search-close {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.search-submit {
+  right: 48px;
+}
+.search-close {
+  right: 8px;
+}
+.search-box input::placeholder {
+  color: #6b7280;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+}
 
 /* FASCIA BLU */
 .fascia-notizia {
@@ -1252,6 +1455,14 @@ figure {
     flex-direction: column !important;
     width: 100% !important;
   }
+  /*MENU A TENDINA*/
+  .site-menu {
+    width: 100%;
+    border-right: 0;
+  }
+  .menu-overlay {
+    display: none;
+  }
 
   /*LOGO*/
   .logo-area {
@@ -1340,7 +1551,6 @@ figure {
   .fascia-notizia .fascia-title {
     margin: 0 !important;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-    color: #d8e1ea !important;
     font-size: 14px !important;
     font-weight: 700 !important;
     line-height: 18px !important;
@@ -1800,8 +2010,6 @@ figure {
   }
 }
 
-/*MENU TENDINA*/
-/*BARRA RICERCA*/
 /*LINK TUTTO*/
 /*COLORE LINK*/
 /*DISABILI CHECK*/
@@ -1813,5 +2021,6 @@ in tablet blocco blu in alto diventa troppo piccolo(blocco blu)
 scritte newsletter in tablet si accentrano(newsletter)
 social in mobile va a sx(footer)
 supplementi di repubblica va a caso(footer)
+controllare ultimo media
 */
 

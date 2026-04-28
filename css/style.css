@@ -349,14 +349,14 @@ body.search-open .search-bar {
   border-right: 1px solid #bfbfbf;
   border-bottom: 1px solid #bfbfbf;
   box-sizing: border-box;
-  padding: 0 16px;
+  padding:  5px 16px;
 }
 .fascia-notizia .row {
   display: flex;
   align-items: flex-start;
   min-height: 110px;
   margin: 0;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 .fascia-media {
   flex: 0 0 150px !important;
@@ -1503,60 +1503,6 @@ figure {
     text-transform: uppercase;
   }
 
-  /*FASCIA BLU*/
-  .fascia-notizia {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-height: 80px !important;
-    margin: 0 !important;
-    box-sizing: border-box !important;
-    padding: 0 10px !important;
-  }
-  .fascia-notizia .row {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    width: 100% !important;
-    min-height: 80px !important;
-    margin: 0 !important;
-    padding-top: 0 !important;
-  }
-  .fascia-notizia [class*="col-"] {
-    margin: 0 !important;
-  }
-  .fascia-notizia .fascia-media {
-    flex: 0 0 120px !important;
-    max-width: 120px !important;
-    width: 120px !important;
-    height: 70px !important;
-    overflow: hidden !important;
-    padding: 0 !important;
-    text-align: center !important;
-    margin: 0 !important;
-  }
-  .fascia-notizia .fascia-media video,
-  .fascia-notizia .fascia-media img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    display: block !important;
-  }
-  .fascia-notizia .fascia-text {
-    flex: 1 1 auto !important;
-    max-width: calc(100% - 120px) !important;
-    width: auto !important;
-    padding: 0 12px !important;
-    text-align: left !important;
-  }
-  .fascia-notizia .fascia-title {
-    margin: 0 !important;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-    font-size: 14px !important;
-    font-weight: 700 !important;
-    line-height: 18px !important;
-    letter-spacing: -0.1px !important;
-  }
-
   /*MENU*/
   .menu-left {
     display: none;
@@ -1694,7 +1640,7 @@ figure {
     line-height: 20px;
     font-weight: 400;
     color: rgb(91, 91, 91);
-    margin-left: 58px;
+    margin-left: 0;
     text-align: left;
   }
 
@@ -1869,7 +1815,7 @@ figure {
   .footer-app-social {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 8px;
     text-align: left;
   }
@@ -1879,7 +1825,8 @@ figure {
   }
   .footer-social-blocco {
     flex: 0 0 auto;
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: 130px;
   }
   .footer-titolo-mini {
     margin-bottom: 12px;
@@ -2015,12 +1962,5 @@ figure {
 /*DISABILI CHECK*/
 /*RICONTROLLARE*/
 
-/*
-problemi:
-in tablet blocco blu in alto diventa troppo piccolo(blocco blu)
-scritte newsletter in tablet si accentrano(newsletter)
-social in mobile va a sx(footer)
-supplementi di repubblica va a caso(footer)
-controllare ultimo media
-*/
+
 

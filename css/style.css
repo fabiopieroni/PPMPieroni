@@ -117,12 +117,19 @@ body {
   white-space: nowrap;
   color: #1f2a37;
 }
+.topbar-abbonati:hover {
+  color: #5b7fb3;
+}
 .topbar-item {
   display: flex;
   align-items: center;
   gap: 6px;
   font-size: 15px;
   color: #1f2a37;
+  text-decoration: none;
+}
+.topbar-item:hover {
+  color: #5b7fb3;
 }
 .topbar-item i {
   font-size: 18px;
@@ -135,6 +142,21 @@ body {
   width: 100%;
   display: block;
 }
+.topbar-notifica,
+.topbar-menu,
+.topbar-utente,
+.topbar-abbonati {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease;
+}
+.topbar-notifica:hover,
+.topbar-menu:hover,
+.topbar-utente:hover,
+.topbar-abbonati:hover {
+  color: #5b7fb3;
+}
+
 /*MENU A TENDINA*/
 .menu-overlay {
   position: fixed;
@@ -251,11 +273,16 @@ body.menu-open .site-menu {
   grid-template-columns: 1fr 1fr;
 }
 .site-menu-grid a {
+  display: block;
   padding: 8px 18px;
   border-bottom: 1px solid #cfcfcf;
   color: #444;
   text-decoration: none;
   font-size: 18px;
+  transition: color 0.2s ease;
+}
+.site-menu-grid a:hover {
+  color: #5b7fb3;
 }
 .site-menu-content {
   flex: 1;
@@ -286,10 +313,15 @@ body.menu-open .site-menu {
   width: 100%;
   padding: 10px 0;
   background: #fff;
+  position: sticky;
+  top: 56px;
+  z-index: 1000;
 }
+
 body.search-open .search-bar {
   display: block;
 }
+
 .search-bar .pagina {
   padding: 0 16px;
 }
@@ -326,6 +358,12 @@ body.search-open .search-bar {
 }
 .search-close {
   right: 8px;
+}
+.search-close:hover {
+  color: #5b7fb3;
+}
+.search-submit:hover {
+  color: #5b7fb3;
 }
 .search-box input::placeholder {
   color: #6b7280;
@@ -388,6 +426,18 @@ body.search-open .search-bar {
   line-height: 26px;
   color: white;
   letter-spacing: -0.2px;
+  padding-top: 5px;
+}
+
+.fascia-img-link {
+  display: block;
+}
+.fascia-text-link {
+  text-decoration: none;
+  color: inherit;
+}
+.fascia-text-link:hover {
+  color: #cfd6de;
 }
 
 /* LOGO */
@@ -453,6 +503,9 @@ body.search-open .search-bar {
   text-decoration: none;
   color: #333;
 }
+.menu-left-item a:hover{
+  color: #5b7fb3;
+}
 .menu-left-item:not(:last-child)::after {
   content: "";
   position: absolute;
@@ -493,6 +546,9 @@ body.search-open .search-bar {
 .menu-right-item a {
   text-decoration: none;
   color: #7a7a7a;
+}
+.menu-right-item a:hover{
+  color: #5b7fb3;
 }
 .menu-right-scroll::-webkit-scrollbar {
   height: 6px;
@@ -588,6 +644,13 @@ body.search-open .search-bar {
   margin: 0 0 4px 0;
   text-transform: none;
 }
+.primo-piano-link {
+  text-decoration: none;
+  color: inherit;
+}
+.primo-piano-link:hover{
+  color: #6b6b6b;
+}
 .primo-piano-firma {
   display: block;
   font-family: Georgia, Times, "Times New Roman", serif;
@@ -616,6 +679,19 @@ body.search-open .search-bar {
 .placeholder-card {
   width: 100%;
   aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+.placeholder-card a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.placeholder-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .placeholder-news-grande {
   min-height: 320px;
@@ -706,6 +782,13 @@ body.search-open .search-bar {
   line-height: 1.1;
   margin: 0;
 }
+.testo-video-sopra-link {
+  text-decoration: none;
+  color: inherit;
+}
+.testo-video-sopra-link:hover{
+  color: #e56522;
+}
 figure {
   margin: 0;
 }
@@ -742,6 +825,13 @@ figure {
   font-weight: 700;
   color: #e56522;
   line-height: 1.05;
+}
+.newsletter-titolo-link{
+  text-decoration: none;
+  color: inherit;
+}
+.newsletter-titolo-link:hover{
+  color: #5b7fb3;
 }
 .newsletter-linea {
   display: block;
@@ -826,6 +916,13 @@ figure {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.15;
+}
+.video-titolo-link{
+  text-decoration: none;
+  color: inherit;
+}
+.video-titolo-link:hover{
+  color: rgb(231, 241, 255);
 }
 
 /* ECONOMIA */
@@ -913,6 +1010,13 @@ figure {
 .economia-scroll-mobile {
   display: block;
 }
+.economia-titolo-link{
+  text-decoration: none;
+  color: inherit;
+}
+.economia-titolo-link:hover{
+  color: #5b7fb3;
+}
 
 /*METEO/GIOCHI*/
 .sezione-servizi {
@@ -944,6 +1048,9 @@ figure {
   font-size: 14px;
   line-height: 1.2;
   text-decoration: none;
+}
+.servizio-bottone:hover {
+  background: #5b7fb3;
 }
 .servizio-box-grande,
 .servizio-box-piccolo {
@@ -995,6 +1102,10 @@ figure {
   margin-top: 6px;
   margin-bottom: 0;
   line-height: 1.2;
+}
+.mini-icona-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* OROSCOPO */
@@ -1070,18 +1181,32 @@ figure {
   font-size: 14px;
   color: #333;
 }
+.footer-testo-piccolo-link{
+  text-decoration: none;
+  color: inherit;
+}
+.footer-testo-piccolo-link:hover{
+  color: #5b7fb3;
+}
 .footer-linea {
   border: 0;
   border-top: 1px solid #ddd;
   margin: 22px 0;
 }
 .footer-bottone {
+  display: inline-block;
   background: #6f95cb;
   color: #fff;
   border: 0;
   padding: 12px 24px;
   font-size: 16px;
   cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+.footer-bottone:hover {
+  background: #000;
+  color: #fff;
 }
 .footer-titolo-mini {
   margin-top: 0;
@@ -1178,6 +1303,9 @@ figure {
 .footer-finale-links a {
   color: #333;
   text-decoration: none;
+}
+.footer-finale-links a:hover {
+  color: #5b7fb3;
 }
 .footer-finale-copyright {
   margin: 0;
@@ -1957,10 +2085,8 @@ figure {
   }
 }
 
-/*LINK TUTTO*/
-/*COLORE LINK*/
+
 /*DISABILI CHECK*/
 /*RICONTROLLARE*/
-
-
+/*cambiare foto menu tendina*/
 

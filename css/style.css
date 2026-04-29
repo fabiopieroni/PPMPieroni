@@ -3,10 +3,17 @@ body {
   background: #efefef;
   padding-top: 110px;
 }
+.bg-link {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
 .pagina {
   max-width: 996px;
   margin: 0 auto;
   background: white;
+  position: relative;
+  z-index: 1;
 }
 
 /*TOPBAR*/
@@ -206,7 +213,7 @@ body.menu-open .site-menu {
    border-bottom: 2px solid #111;
  }
 .site-menu-logo img {
-  width: 62px;
+  width: 40px;
   height: auto;
   display: block;
 }
@@ -464,7 +471,7 @@ body.search-open .search-bar {
   font-family: "Eugenio Sans Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: 500;
-  color: rgb(150, 150, 150);
+  color: rgb(100, 100, 100);;
   text-transform: uppercase;
   margin-top: 12px;
   padding-top: 8px;
@@ -545,7 +552,7 @@ body.search-open .search-bar {
 }
 .menu-right-item a {
   text-decoration: none;
-  color: #7a7a7a;
+  color: #444;;
 }
 .menu-right-item a:hover{
   color: #5b7fb3;
@@ -629,7 +636,7 @@ body.search-open .search-bar {
 .primo-piano-label {
   margin-top: 0;
   margin-bottom: 10px;
-  color: #d9482b;
+  color: #a12a1a;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -775,7 +782,7 @@ body.search-open .search-bar {
   right: 24px;
   bottom: 28px;
   z-index: 2;
-  color: #fff;
+  color: #757575;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 34px;
   font-weight: 700;
@@ -1195,7 +1202,7 @@ figure {
 }
 .footer-bottone {
   display: inline-block;
-  background: #6f95cb;
+  background: #3f6fb5;
   color: #fff;
   border: 0;
   padding: 12px 24px;
@@ -1218,7 +1225,6 @@ figure {
 .footer-link-riga {
   margin: 0;
   font-size: 14px;
-  text-decoration: underline;
   cursor: pointer;
 }
 .footer-social {
@@ -2084,9 +2090,4 @@ figure {
     margin-bottom: 18px !important;
   }
 }
-
-
-/*DISABILI CHECK*/
-/*RICONTROLLARE*/
-/*cambiare foto menu tendina*/
 

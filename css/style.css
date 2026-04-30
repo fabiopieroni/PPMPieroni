@@ -1341,8 +1341,7 @@ figure {
     padding-left: 16px;
     padding-right: 16px;
   }
-
-  /*spariscono*/
+  
   .logo-area {
     display: none;
   }
@@ -1371,11 +1370,65 @@ figure {
     border: none;
     white-space: nowrap;
   }
-  /* nasconde il vecchio bottone desktop */
   .blocco-servizi-superiore > .servizio-colonna:nth-child(2) > .servizio-bottone {
     display: none;
   }
 }
+@media (min-width: 425px) and (max-width: 767px) {
+  .blocco-servizi-superiore {
+    padding-top: 0;
+  }
+  .servizio-colonna:not(:last-child) {
+    border-right: none;
+  }
+  .servizio-colonna {
+    padding: 18px;
+  }
+  .servizio-colonna-meteo {
+    flex: 0 0 70%;
+    max-width: 70%;
+    border-right: 1px solid #dddddd;
+  }
+  .servizio-colonna-previsioni {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+  .servizio-colonna-gioco {
+    flex: 0 0 50%;
+    max-width: 50%;
+    border-top: 1px solid #dddddd;
+    padding-top: 14px;
+  }
+  .servizio-colonna-gioco:last-child {
+    border-left: 1px solid #dddddd;
+  }
+  .meteo-header-mobile .servizio-bottone-mobile {
+    display: none !important;
+  }
+  .servizio-bottone-desktop {
+    display: inline-block !important;
+  }
+  .gioco-testo-mobile {
+    display: none !important;
+  }
+  .gioco-testo-desktop {
+    display: block !important;
+  }
+  .servizio-box-grande {
+    min-height: 220px;
+  }
+  .servizio-box-piccolo {
+    min-height: 185px;
+  }
+  .servizio-colonna-previsioni .icona-testo:first-of-type {
+    border-top: none;
+    padding-top: 0;
+  }
+  .servizio-colonna-previsioni .servizio-bottone {
+    margin-bottom: 18px !important;
+  }
+}
+
   @media (min-width: 768px) {
     /*TOPBAR*/
     .topbar {
@@ -2032,62 +2085,6 @@ figure {
   .footer-finale-copyright {
     font-size: 12px;
     line-height: 1.4;
-  }
-}
-
-/*SEZIONE METEO(CAMBIA DA 767PX A 481PX)*/
-@media (min-width: 481px) and (max-width: 767px) {
-  .blocco-servizi-superiore {
-    padding-top: 0;
-  }
-  .servizio-colonna:not(:last-child) {
-    border-right: none;
-  }
-  .servizio-colonna {
-    padding: 18px;
-  }
-  .servizio-colonna-meteo {
-    flex: 0 0 70%;
-    max-width: 70%;
-    border-right: 1px solid #dddddd;
-  }
-  .servizio-colonna-previsioni {
-    flex: 0 0 30%;
-    max-width: 30%;
-  }
-  .servizio-colonna-gioco {
-    flex: 0 0 50%;
-    max-width: 50%;
-    border-top: 1px solid #dddddd;
-    padding-top: 14px;
-  }
-  .servizio-colonna-gioco:last-child {
-    border-left: 1px solid #dddddd;
-  }
-  .meteo-header-mobile .servizio-bottone-mobile {
-    display: none !important;
-  }
-  .servizio-bottone-desktop {
-    display: inline-block !important;
-  }
-  .gioco-testo-mobile {
-    display: none !important;
-  }
-  .gioco-testo-desktop {
-    display: block !important;
-  }
-  .servizio-box-grande {
-    min-height: 220px;
-  }
-  .servizio-box-piccolo {
-    min-height: 185px;
-  }
-  .servizio-colonna-previsioni .icona-testo:first-of-type {
-    border-top: none;
-    padding-top: 0;
-  }
-  .servizio-colonna-previsioni .servizio-bottone {
-    margin-bottom: 18px !important;
   }
 }
 
